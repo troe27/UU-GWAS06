@@ -78,7 +78,7 @@ pow.calc <- function(n, rsquare, maf, beta){
 ```
 
 
-{% include figures/youtube.html id=-rmreyRAbkE %}
+{% include youtube.html id=-rmreyRAbkE %}
 
 
 
