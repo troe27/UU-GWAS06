@@ -40,15 +40,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 [OMIM](https://www.omim.org/entry/123631?search=CRYBA4&highlight=cryba4)  
 
 
-
-<br>
-<br>
-
 <details><summary>hint</summary>
 <p>
 
 
-![test_figure](figures/test_figure1.png)
+ ![test_figure](figures/test_figure1.png)
 
 </p>
 </details>
