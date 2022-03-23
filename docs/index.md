@@ -19,7 +19,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 #### 1.1: is the gene relevant for the disease?
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-[OMIM](https://www.omim.org/entry/123631?search=CRYBA4&highlight=cryba4)
+[OMIM](https://www.omim.org/entry/123631?search=CRYBA4&highlight=cryba4)  
+
+
 
 </p>
 </details>
