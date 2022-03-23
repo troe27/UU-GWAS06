@@ -3,6 +3,24 @@
 
 
 # Table of Contents
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [UNDER CONSTRUCTION](#under-construction)
+- [Table of Contents](#table-of-contents)
+- [Learning Goals](#learning-goals)
+	- [Requirements for completion](#requirements-for-completion)
+- [Introduction & Overview](#introduction-overview)
+	- [Dataset & Condition](#dataset-condition)
+	- [Methodology](#methodology)
+		- [Scope and limitations of the bioinformatics approach](#scope-and-limitations-of-the-bioinformatics-approach)
+- [1: Choosing a gene](#1-choosing-a-gene)
+			- [1.1: is the gene relevant for the disease?](#11-is-the-gene-relevant-for-the-disease)
+			- [1.2: Where and when is the gene expressed?](#12-where-and-when-is-the-gene-expressed)
+			- [1.3: Does the loss of function animal model have a phenotype?](#13-does-the-loss-of-function-animal-model-have-a-phenotype)
+			- [1.4: is the three-dimensional structure resolved?](#14-is-the-three-dimensional-structure-resolved)
+		- [code section](#code-section)
+
+<!-- /TOC -->
 
 # Learning Goals
 ## Requirements for completion
@@ -21,10 +39,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 [OMIM](https://www.omim.org/entry/123631?search=CRYBA4&highlight=cryba4)  
 
-
-
-</p>
-</details>
 
 
 <br>
