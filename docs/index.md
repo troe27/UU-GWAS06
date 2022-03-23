@@ -44,7 +44,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <p>
 
 
- ![test_figure](figures/test_figure1.png)
+ ![test_figure](figures/test_figure1.png)  
+
+
 
 </p>
 </details>
