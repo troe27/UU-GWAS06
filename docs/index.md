@@ -7,12 +7,10 @@
 
 - [UNDER CONSTRUCTION](#under-construction)
 - [Table of Contents](#table-of-contents)
-- [Learning Goals](#learning-goals)
-	- [Requirements for completion](#requirements-for-completion)
 - [Introduction & Overview](#introduction-overview)
-	- [Dataset & Condition](#dataset-condition)
-	- [Methodology](#methodology)
-		- [Scope and limitations of the bioinformatics approach](#scope-and-limitations-of-the-bioinformatics-approach)
+	- [Requirements for completion.](#requirements-for-completion)
+	- [The larger context](#the-larger-context)
+			- [Scope and limitations of the bioinformatics approach](#scope-and-limitations-of-the-bioinformatics-approach)
 - [1: Choosing a gene](#1-choosing-a-gene)
 			- [1.1: is the gene relevant for the disease?](#11-is-the-gene-relevant-for-the-disease)
 			- [1.2: Where and when is the gene expressed?](#12-where-and-when-is-the-gene-expressed)
@@ -23,14 +21,26 @@
 
 <!-- /TOC -->
 
-# Learning Goals
-## Requirements for completion
-
 # Introduction & Overview
+This Afternoon's Practical is structured into three parts:
+
+[Part 1](#1-choosing-a-gene),  Which focusses on choosing a gene to investigate. Often, regions of the genome implicated in a condition are large, and tagging markers (e.g. from a GWAS, QTL-scan or Linkage analysis) may not have the resolution to narrow it to a single gene.
+Here, Knowledge of the underlying biology and auxillary data from online-databases can help to pick a likely candidate.
+In this section you will learn:
+
+ - how to A
+ - how to B
+
+## Requirements for completion.
+ - A
+ - B
+ - C
+
+## The larger context
+#### Scope and limitations of the bioinformatics approach
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-## Dataset & Condition
-## Methodology
-### Scope and limitations of the bioinformatics approach
+
+
 
 
 
