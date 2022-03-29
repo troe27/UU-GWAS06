@@ -30,7 +30,7 @@
 
 # Introduction & Overview
 
-[Wang et al 2020](../data/Wang-Li_PlosOne_2020_in-silico-analysis-CRYBA4.pdf)  
+[Wang et al 2020](../data/wang_etal_2020.pdf)  
 
 This Afternoon's Practical is structured into three parts:
 
