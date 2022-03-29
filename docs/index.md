@@ -86,7 +86,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 - [OMIM](https://www.omim.org/entry/123631?search=CRYBA4&highlight=cryba4)  
 
 
-<details><summary>hint</summary>
+<details>
+
+<summary>hint</summary>
+
 <p>
 
 
@@ -95,6 +98,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 </p>
+
 </details>
 
 
