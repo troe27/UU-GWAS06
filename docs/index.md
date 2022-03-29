@@ -23,15 +23,18 @@
 		- [2.3:  Evaluate the impact of the substitution on the 3D structure of a protein](#23-evaluate-the-impact-of-the-substitution-on-the-3d-structure-of-a-protein)  
 		- [2.4: Integrative evaluation](#24-integrative-evaluation)  
 		- [2.5: Selecting the final candidate SNP set](#25-selecting-the-final-candidate-snp-set)  
-	- [Part 3: Designing follow-up investigations](#part-3-designing-follow-up-investigations)  
+	- [3: Designing follow-up investigations](#part-3-designing-follow-up-investigations)  
 		- [EXAMPLE code section](#example-code-section)
 
 <!-- /TOC -->
 
 # Introduction & Overview
+
+[Wang et al 2020](../data/Wang-Li_PlosOne_2020_in-silico-analysis-CRYBA4.pdf)  
+
 This Afternoon's Practical is structured into three parts:
 
-[Part I](#1-choosing-a-gene),  Which focusses on choosing a gene to investigate. Often, regions of the genome implicated in a condition are large, and tagging markers (e.g. from a GWAS, QTL-scan or Linkage analysis) may not have the resolution to narrow it to a single gene.
+[Part 1](#1-choosing-a-gene),  Which focusses on choosing a gene to investigate. Often, regions of the genome implicated in a condition are large, and tagging markers (e.g. from a GWAS, QTL-scan or Linkage analysis) may not have the resolution to narrow it to a single gene.
 Here, Knowledge of the underlying biology and auxillary data from online-databases can help to pick a likely candidate.
 In this section you will learn:
 
@@ -39,7 +42,17 @@ In this section you will learn:
  - how to B
 
 
- [Part II](#2-identifying-a-set-of-candidate-snps),
+ [Part 2](#2-identifying-a-set-of-candidate-snps),
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+
+ - how to C
+ - how to D
+
+ [Part 3](#part-3-designing-follow-up-investigations)
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+
+ - how to E
+ - how to F
 
 ## Requirements for completion.
  - A
@@ -81,9 +94,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 - developmenatal databases
 
 #### 1.3: Does the loss of function animal model have a phenotype?
-	- mouse MGI
+- mouse MGI
 #### 1.4: is the three-dimensional structure resolved?
-	- PDB
+- PDB
 
 #### 1.5: Focussing on nsSNP occuring in a gene of interest
 - diagram with the possible sources of variation
@@ -105,34 +118,36 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 ### 2.1: Predicting a deleterious effect
-	- SnpEff
+- SnpEff
 
 ### 2.2: Identifying categories of interest
 
-	- Conserved SNPs
+- Conserved SNPs
 
-		- UCSC Browser
+	- UCSC Browser
 
-	- Regulatory SNPs
+- Regulatory SNPs
 
-		- ENCODE
+	- ENCODE
 
-	- SNPs in protein domains
+- SNPs in protein domains
 
-		- PFAM
+	- PFAM
 
 ### 2.3:  Evaluate the impact of the substitution on the 3D structure of a protein
 
-	- PDB
+- PDB
 
 ### 2.4: Integrative evaluation
 
-		- Ensembl Variant Effect Predictor
+- Ensembl Variant Effect Predictor
 
 ### 2.5: Selecting the final candidate SNP set
 
 
-## Part 3: Designing follow-up investigations
+## 3: Designing follow-up investigations
+
+
 
 
 
