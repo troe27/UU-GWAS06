@@ -74,7 +74,7 @@ In this section you will learn:
  <details>
  <summary>hint</summary>
 ![test_figure](figures/test_figure1.png)  
- </details>
+
 
 
 ## 0.4: The larger context
