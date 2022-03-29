@@ -71,31 +71,23 @@ In this section you will learn:
  - B
  - C
 
+ <details>
+ <summary>hint</summary>
+![test_figure](figures/test_figure1.png)  
+ </details>
+
+
 ## 0.4: The larger context
 #### Scope and limitations of the bioinformatics approach
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-
-<details><summary>tips</summary>
+<details>
+<summary>hint</summary>
 <p>
-
-- you can use the ```subset``` function to subset a dataframe based on conditions, e.g.
-
-
-```Python
-Dataframe_2 # A dataframe with two columns, A and B.
-# we only want the rows where the value of B is below 300:
-filtered_df2 <- subset(Dataframe_2, B<300)
-```
-
-- the geoms for boxplot, scatterplot and histogram are called ``geom_boxplot``, ``geom_point``, and ``geom_histogram``
-
+   ![test_figure](figures/test_figure1.png)  
 </p>
 </details>
 
-
-<br>
-<br>
 
 
 ## 1: Choosing a gene
@@ -106,21 +98,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 <details>
-
 <summary>hint</summary>
-
 <p>
-
-
    ![test_figure](figures/test_figure1.png)  
-
-
-
 </p>
-
 </details>
-
-
 <br>
 <br>
 
