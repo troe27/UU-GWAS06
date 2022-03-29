@@ -3,27 +3,27 @@
 
 
 # Table of Contents
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
 
-- [UNDER CONSTRUCTION](#under-construction)
-- [Table of Contents](#table-of-contents)
-- [Introduction & Overview](#introduction-overview)
-	- [Requirements for completion.](#requirements-for-completion)
-	- [The larger context](#the-larger-context)
-			- [Scope and limitations of the bioinformatics approach](#scope-and-limitations-of-the-bioinformatics-approach)
-	- [1: Choosing a gene](#1-choosing-a-gene)
-			- [1.1: is the gene relevant for the disease?](#11-is-the-gene-relevant-for-the-disease)
-			- [1.2: Where and when is the gene expressed?](#12-where-and-when-is-the-gene-expressed)
-			- [1.3: Does the loss of function animal model have a phenotype?](#13-does-the-loss-of-function-animal-model-have-a-phenotype)
-			- [1.4: is the three-dimensional structure resolved?](#14-is-the-three-dimensional-structure-resolved)
-			- [1.5: Focussing on nsSNP occuring in a gene of interest](#15-focussing-on-nssnp-occuring-in-a-gene-of-interest)
-	- [2: Evaluating the potential effect of a nSNP](#2-evaluating-the-potential-effect-of-a-nsnp)
-		- [2.1: Predicting a deleterious effect](#21-predicting-a-deleterious-effect)
-		- [2.2: Identifying categories of interest](#22-identifying-categories-of-interest)
-		- [2.3:  Evaluate the impact of the substitution on the 3D structure of a protein](#23-evaluate-the-impact-of-the-substitution-on-the-3d-structure-of-a-protein)
-		- [2.4: Integrative evaluation](#24-integrative-evaluation)
-		- [2.5: Selecting the final candidate SNP set](#25-selecting-the-final-candidate-snp-set)
-	- [Part 3: Designing follow-up investigations](#part-3-designing-follow-up-investigations)
+- [UNDER CONSTRUCTION](#under-construction)  
+- [Table of Contents](#table-of-contents)  
+- [Introduction & Overview](#introduction-overview)  
+	- [Requirements for completion.](#requirements-for-completion)  
+	- [The larger context](#the-larger-context)  
+			- [Scope and limitations of the bioinformatics approach](#scope-and-limitations-of-the-bioinformatics-approach)  
+	- [1: Choosing a gene](#1-choosing-a-gene)  
+			- [1.1: is the gene relevant for the disease?](#11-is-the-gene-relevant-for-the-disease)  
+			- [1.2: Where and when is the gene expressed?](#12-where-and-when-is-the-gene-expressed)  
+			- [1.3: Does the loss of function animal model have a phenotype?](#13-does-the-loss-of-function-animal-model-have-a-phenotype)  
+			- [1.4: is the three-dimensional structure resolved?](#14-is-the-three-dimensional-structure-resolved)  
+			- [1.5: Focussing on nsSNP occuring in a gene of interest](#15-focussing-on-nssnp-occuring-in-a-gene-of-interest)  
+	- [2: Evaluating the potential effect of a nSNP](#2-evaluating-the-potential-effect-of-a-nsnp)  
+		- [2.1: Predicting a deleterious effect](#21-predicting-a-deleterious-effect)  
+		- [2.2: Identifying categories of interest](#22-identifying-categories-of-interest)  
+		- [2.3:  Evaluate the impact of the substitution on the 3D structure of a protein](#23-evaluate-the-impact-of-the-substitution-on-the-3d-structure-of-a-protein)  
+		- [2.4: Integrative evaluation](#24-integrative-evaluation)  
+		- [2.5: Selecting the final candidate SNP set](#25-selecting-the-final-candidate-snp-set)  
+	- [Part 3: Designing follow-up investigations](#part-3-designing-follow-up-investigations)  
 		- [EXAMPLE code section](#example-code-section)
 
 <!-- /TOC -->
