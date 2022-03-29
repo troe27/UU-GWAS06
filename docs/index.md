@@ -1,3 +1,5 @@
+theme: jekyll-theme-slate
+markdown: CommonMarkGhPages
 
 # UNDER CONSTRUCTION
 
@@ -71,9 +73,6 @@ In this section you will learn:
  - B
  - C
 
- <details>
- <summary>hint</summary>
-![test_figure](figures/test_figure1.png)  
 
 
 
