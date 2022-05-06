@@ -67,7 +67,7 @@ Annotations for each individual variant will be stored in the newly created ```.
 
 - have a look at the ```.vcf``` file.
   - Can you find the annotation fields?
-  - what is the prediction for variants  ```rs1459497417``` , ```rs1194205126```, ```rs100002124``` and ``` rs758790937 ``` ?
+  - what is the prediction for variants  ```rs1459497417``` , ```rs1194205126```, ```rs74315486``` and ``` rs758790937 ``` ?
     - rs1459497417:
 ```
 ANN=T|structural_interaction_variant|HIGH|CRYBA4|ENSG00000196431|interaction|3LWK:A_32-A_95:ENST00000354760|protein_coding|4/6|c.283C>T||||||,T|structural_interaction_variant|HIGH|CRYBA4|ENSG00000196431|interaction|3LWK:A_55-A_95:ENST00000354760|protein_coding|4/6|c.283C>T||||||,T|missense_variant|MODERATE|CRYBA4|ENSG00000196431|transcript|ENST00000354760.3|protein_coding|4/6|c.283C>T|p.Arg95Trp|318/811|283/591|95/196||,T|non_coding_transcript_exon_variant|MODIFIER|CRYBA4|ENSG00000196431|transcript|ENST00000466315.1|processed_transcript|3/5|n.180C>T||||||
@@ -77,9 +77,9 @@ ANN=T|structural_interaction_variant|HIGH|CRYBA4|ENSG00000196431|interaction|3LW
 ```
 ANN=A|structural_interaction_variant|HIGH|CRYBA4|ENSG00000196431|interaction|3LWK:A_150-A_192:ENST00000354760|protein_coding|6/6|c.449T>A||||||,A|missense_variant|MODERATE|CRYBA4|ENSG00000196431|transcript|ENST00000354760.3|protein_coding|6/6|c.449T>A|p.Val150Asp|484/811|449/591|150/196||,A|non_coding_transcript_exon_variant|MODIFIER|CRYBA4|ENSG00000196431|transcript|ENST00000466315.1|processed_transcript|5/5|n.346T>A||||||
 ```
-    - rs100002124:
+    - rs74315486:
 ```
-ANN=A|missense_variant|MODERATE|CRYBA4|ENSG00000196431|transcript|ENST00000354760.3|protein_coding|6/6|c.475G>A|p.Gly159Arg|510/811|475/591|159/196||,A|non_coding_transcript_exon_variant|MODIFIER|CRYBA4|ENSG00000196431|transcript|ENST00000466315.1|processed_transcript|5/5|n.372G>A||||||
+ANN=C|structural_interaction_variant|HIGH|CRYBA4|ENSG00000196431|interaction|3LWK:A_33-A_94:ENST00000354760|protein_coding|4/6|c.281T>C||||||,C|missense_variant|MODERATE|CRYBA4|ENSG00000196431|transcript|ENST00000354760.3|protein_coding|4/6|c.281T>C|p.Phe94Ser|316/811|281/591|94/196||,C|non_coding_transcript_exon_variant|MODIFIER|CRYBA4|ENSG00000196431|transcript|ENST00000466315.1|processed_transcript|3/5|n.178T>C||||||
 ```
     - rs758790937:
 ```

@@ -42,7 +42,7 @@ Annotations for each individual variant will be stored in the newly created ```.
 
 - have a look at the ```.vcf``` file.
   - Can you find the annotation fields?
-  - what is the prediction for variants  ```rs1459497417``` , ```rs1194205126```, ```rs100002124``` and ``` rs758790937 ``` ?
+  - what is the prediction for variants  ```rs1459497417``` , ```rs1194205126```, ```rs74315486``` and ``` rs758790937 ``` ?
   - is this in line with the predictions from Wang et al?
 
 for the subsequent analysis, we are only interested in the variants that have a "HIGH" or "MODERATE" predicted effect.
