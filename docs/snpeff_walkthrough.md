@@ -29,10 +29,10 @@ snpEff eff GRCh38.86 file.vcf  > file.ann.vcf
 
 this will take a minute or two.
 - have a look at the summary file using firefox. If you do not have X11 forwarding enabled, or lack a X11 backend on your computer, you'll have to download the file.
-  - how many of the SNPs are in the exonic regions?
-   - _751_
-  - how many variants result in a new stop-codon?
-   - _22_
+  - how many of the SNPs are in the exonic regions?  
+    - _751_
+  - how many variants result in a new stop-codon?  
+    - _22_
   - what is the Ts/Tv ratio?
     -  _The [ratio of transitions to transversions](https://en.wikipedia.org/wiki/Point_mutation#Transition/transversion_categorization)_
   - why are are the plot for the quality histogram and allele-frequency empty?
@@ -52,9 +52,10 @@ Annotations for each individual variant will be stored in the newly created ```.
   - Can you find the annotation fields?
   - what is the prediction for variants  ```rs1459497417``` , ```rs1194205126```, ```rs100002124``` and ``` rs758790937 ``` ?
     - rs1459497417:
-  ```
+```
 ANN=T|structural_interaction_variant|HIGH|CRYBA4|ENSG00000196431|interaction|3LWK:A_32-A_95:ENST00000354760|protein_coding|4/6|c.283C>T||||||,T|structural_interaction_variant|HIGH|CRYBA4|ENSG00000196431|interaction|3LWK:A_55-A_95:ENST00000354760|protein_coding|4/6|c.283C>T||||||,T|missense_variant|MODERATE|CRYBA4|ENSG00000196431|transcript|ENST00000354760.3|protein_coding|4/6|c.283C>T|p.Arg95Trp|318/811|283/591|95/196||,T|non_coding_transcript_exon_variant|MODIFIER|CRYBA4|ENSG00000196431|transcript|ENST00000466315.1|processed_transcript|3/5|n.180C>T||||||
 ```
+
     - rs1194205126:
 ```
 ANN=A|structural_interaction_variant|HIGH|CRYBA4|ENSG00000196431|interaction|3LWK:A_150-A_192:ENST00000354760|protein_coding|6/6|c.449T>A||||||,A|missense_variant|MODERATE|CRYBA4|ENSG00000196431|transcript|ENST00000354760.3|protein_coding|6/6|c.449T>A|p.Val150Asp|484/811|449/591|150/196||,A|non_coding_transcript_exon_variant|MODIFIER|CRYBA4|ENSG00000196431|transcript|ENST00000466315.1|processed_transcript|5/5|n.346T>A||||||
@@ -70,7 +71,7 @@ ANN=A|missense_variant|MODERATE|CRYBA4|ENSG00000196431|transcript|ENST0000035476
 
   - is this in line with the predictions from Wang et al?
     - _yes! while Wang et al. use different software to predict different features for these variants, they are largely in line with the annotation of snpEff. for example, the preservation times  predicted by PANTHER_PSEP are quite high, indicating a high level of conservation - usually a sign that variants here are deleterious. Similar, both PhD-SNP and polyphen 2.0 predict pathogenicity of disease causing effects for these variants.
-    this is in line 
+    this is in line
 
 for the subsequent analysis, we are only interested in the variants that have a "HIGH" or "MODERATE" predicted effect.
 
