@@ -11,7 +11,7 @@ We will be working on Rackham for this, where SnpEff is installed as a module.
 
 - log into rackham, start an interactive session with the reservation code ```reservation code```
 - load the modules ```bioinfo-tools``` and ```snpEff/4.3t```
-- copy the file ```/path/to/20220425_chr22_targetregion.recode_diff_chrname.vcf``` to your working directory.
+- copy the file ```/proj/g2020004/private/computer_practicals/GWAS06/20220425_chr22_targetregion.recode_diff_chrname.vcf``` to your working directory.
 
 
 SnpEff works by comparing the positions of these SNPs against a database of genes, ORFs and other genome annotations to estimate the function and impact of individual SNPs.
