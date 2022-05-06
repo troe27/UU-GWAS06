@@ -18,8 +18,25 @@ SnpEff works by comparing the positions of these SNPs against a database of gene
 Many databases e.g. for humans and model organisms (and an update mechanism) are built into snpEff, so we do not have to [make them ourselves](http://pcingola.github.io/SnpEff/se_buildingdb/), though it is possible to do so from a ```.gff``` file.
 You can have a look at the list of databases using ```snpEff databases```. Be warned, its a long list!
 
-It is important however, to match the reference genome your ```.vcf``` was based on, to a database based on the same reference. This information is stored in the ```.vcf``` file.
+It is important however, to match the reference genome your ```.vcf``` was based on, to a database based on the same reference. This information is stored in the ```.vcf``` file.  
 - Can you tell which reference our ```.vcf```file was built on? if you are unsure where to look, remember the [VCFv4.2 fileformat specifications](https://samtools.github.io/hts-specs/VCFv4.2.pdf).
+    - _You can find this information in the header of the ```.vcf```file, on line 5. The reference used was [**GRch38.p13**](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.39/)_
+    ```bash
+    head -10 /path/to/20220425_chr22_targetregion.recode_diff_chrname.vcf
+    ```
+
+    >```
+    >##fileformat=VCFv4.2
+    >##fileDate=20210513
+    >##source=dbSNP
+    >##dbSNP_BUILD_ID=155
+    >##reference=GRCh38.p13
+    >##phasing=partial
+    >##INFO=<ID=RS,Number=1,Type=Integer,Description="dbSNP ID (i.e. rs number)">
+    >##INFO=<ID=GENEINFO,Number=1,Type=String,Description="Pairs each of gene symbol:gene id.  The gene symbol and id are delimited by a colon (:) and each pair is delimited by a vertical bar (|).  Does not include pseudogenes.">
+    >##INFO=<ID=PSEUDOGENEINFO,Number=1,Type=String,Description="Pairs each of pseudogene symbol:gene id.  The pseudogene symbol and id are delimited by a colon (:) and each pair is delimited by a vertical bar (|)">
+    >##INFO=<ID=dbSNPBuildID,Number=1,Type=Integer,Description="First dbSNP Build for RS">
+    ```
 
 we will be using the ```eff ``` command within snpEff to annotate our ```.vcf```-file and generate a ```.html``` report:
 
@@ -71,7 +88,7 @@ ANN=A|missense_variant|MODERATE|CRYBA4|ENSG00000196431|transcript|ENST0000035476
 
   - is this in line with the predictions from Wang et al?
     - _yes! while Wang et al. use different software to predict different features for these variants, they are largely in line with the annotation of snpEff. for example, the preservation times  predicted by PANTHER_PSEP are quite high, indicating a high level of conservation - usually a sign that variants here are deleterious. Similar, both PhD-SNP and polyphen 2.0 predict pathogenicity of disease causing effects for these variants.
-    this is in line
+    this is in line with the "HIGH" or "MODERATE" impact predicted by snpEff and the finding that all of these are exonic variants that result in amino-acid changes._
 
 for the subsequent analysis, we are only interested in the variants that have a "HIGH" or "MODERATE" predicted effect.
 
