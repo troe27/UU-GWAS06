@@ -36,7 +36,9 @@ this will take a minute or two.
   - what is the most common amino-acid change?
   - how many times was the **GAG** codon mutated to **AAG** ?
   - how many times was the **TTG** codon mutated to **GTG**?
-  - which of these two point mutations will likely have a larger impact on the protein structure?
+  - which of these two point mutations will likely have a larger impact on the protein structure? [hint](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amino_Acids.svg/831px-Amino_Acids.svg.png)
+
+
 
 Annotations for each individual variant will be stored in the newly created ```.vcf``` file.
 
