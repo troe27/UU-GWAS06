@@ -1,13 +1,14 @@
 theme: jekyll-theme-slate
 markdown: CommonMarkGhPages
 
-# UNDER CONSTRUCTION
+
+## Table of contents
 
 
 
-**1. Introduction**
+## 1. Introduction
 
-**1.1 Overview**
+### 1.1 Overview
 
 In this practical you will learn how to use well-established methods and resources to annotate a collection of variants to determine if a given substitution has a deleterious effect and possibly pathological consequences.
 
@@ -15,15 +16,15 @@ We will follow the example in the paper by [Wang et al., PLoS One, 2020, 15(1)](
 
 You will start with a large collection of SNPs reported for _CRYBA4_ in the [dbSNP database](https://www.ncbi.nlm.nih.gov/books/NBK21088/) and you will annotate them using the command-line annotation and functional prediction tool [SNPEff](http://pcingola.github.io/SnpEff/se_introduction/). You will visualize some of these variants using the [UCSC Genome Browser](https://genome.ucsc.edu/training/index.html) to understand their position and properties in the context of the genomic region of the _CRYBA4_ gene. As time permits, you will also annotate a subset of these variants using the online tool [ENSEMBLE Variant Effect Predictor (VEP)](https://www.youtube.com/watch?v=6MltwC-ydN0).
 
-**1.2 Learning goals**
+### 1.2 Learning goals
 
 The goal of the practical is to familiarize you with annotation tools that you could apply to any set of variants of interest and also, to enhance your knowledge on how to use the UCSC Genome Browser for extracting important information about a variant or a gene region.
 
-**1.3 Requirements for completion**
+### 1.3 Requirements for completion
 
 To complete this practical you need to go through Parts 2-4 of this document and answer the questions. You are strongly encouraged to complete Part 5 as well, but do as much as you can as time permits. Please, submit your report to voichita.marinescu@imbim.uu.se **no later than May 27, 2022.**
 
-**1.4. References and Materials**
+### 1.4. References and Materials
 
 - The paper discussed in the lecture: [Wang et al., PLoS One, 2020, 15(1)](./wang_etal_2020.pdf)
 
@@ -40,16 +41,16 @@ To complete this practical you need to go through Parts 2-4 of this document and
 
 
 
-# **2. The biological context**
+## **2. The biological context**
 
-### 2.1 The eye lens, crystallins and cataracts**
+### 2.1 The eye lens, crystallins and cataracts
 
 The lens of the eye is an avascular transparent structure situated behind the iris whose primary role is to focus incoming light onto retina. The transparency of the lens is essential for normal vision and conditions that cause an opacity of the lens lead to diseases called cataracts (panel A below). The predominant proteins in the lens are crystallins that are divided in two superfamilies alpha and beta-gamma; alpha and beta family members are further classified based on their acidic or basic character (panel B below). The genes for several members of the beta family, including the gene that we will focus on, _CRYBA4_, form a gene cluster on chromosome 22 (panel C, from Wiston G., _Hum. Genomics_, 2012, 6(1)). Mutations in _CRYBA4_, have been associated with different forms of congenital cataracts.
 
 ![int_fig1](figures/Introduction_Figure-1.png)
 
 
-### **2.2 Learning more about the** _ **CRYBA4** _ **gene and its variants**
+### 2.2 Learning more about the _CRYBA4_ gene and its variants
 
 Access the page for [_CRYBA4_](https://www.genecards.org/cgi-bin/carddisp.pl?gene=CRYBA4#) at [GeneCards](https://www.genecards.org/), a comprehensive, integrative database for all annotated and predicted human genes. Read through the page and in particular the following sections:
 
@@ -218,7 +219,7 @@ In addition to specifying the chromosome and the start and end positions in the 
 
 Right-click at any place in the track viewer and select the “View Image” option from the pop-up menu. This will open a new tab in your browser showing the figure that you could download in png format; right click on the image and choose “Save image as”. Depending on your browser settings you may need to allow pop-ups from the UCSC in order for the image to be opened in a new tab.
 
-## 4.2 Exploring the CRYBA4 locus in the UCSC Genome Browser
+### 4.2 Exploring the CRYBA4 locus in the UCSC Genome Browser
 
 - Type the gene symbol **CRYBA4** in the search box at the top and click ```go```. Turn on all the default tracks.
 
@@ -243,14 +244,13 @@ Two important tracks displaying regulatory elements are included in the ```Regul
 
 
 
-## **4.3 Visualizing the SnpEff-annotated variants as a custom track in the UCSC Genome Browser**
+### **4.3 Visualizing the SnpEff-annotated variants as a custom track in the UCSC Genome Browser**
 
-### Custom tracks
+#### Custom tracks
 One very powerful feature of the Genome Browser is its ability to upload data supplied by the user and display it as a custom track alongside all other tracks in its database. In the previous section, you generated the ```annot_high.vcf``` and ```annot_mod.vcf``` files. We are going to upload and visualize the SNPs in these files as custom tracks in the genome browser.
 
 
 #### BED format
-B
 In order for the browser to map the user-supplied data to its internal data, it has to be uploaded in a specific format called BED (browser extensible data) format in which the data lines to be displayed in the custom track are defined. In this case, each SNP will constitute a line in the BED file.
 
 The BED file is a space- or tab-delimited text file that contains a number of required and optional fields.
@@ -272,7 +272,7 @@ The 9 additional optional BED fields are:
 - **blockSizes**: A comma-separated list of the block sizes.
 - **blockStarts**: A comma-separated list of block starts.
 
-##### Generating the BED format files
+#### Generating the BED format files
 A BED file may be generated in several ways (in bash, R, python, Excel etc.). The following bash script is one such solution. The content of the ```annot_high.bed``` file will be displayed in red and the one of the ```annot_mod.bed``` file in green.
 
 ```bash
@@ -297,7 +297,7 @@ sed -i '1s/^/browser position chr22:26602982-26635663\n/' annot_mod.bed
 ```
 
 
-##### Uploading the BED format files as custom tracks
+#### Uploading the BED format files as custom tracks
 Select the ```custom tracks``` option under the ```my data``` button.  
 ![selct](figures/custom.png)
 
@@ -316,7 +316,7 @@ You will now have a new track group ```Custom tracks``` at the top. Each of the 
 
 #### _Exploring the variants_
 
-### Make sure that the following tracks are turned on:
+##### Make sure that the following tracks are turned on:
 
 - in the ```Conservation``` group, set ```Conservation``` to _full_
 - in the ```Regulation``` group, set ```ENCODE cCREs``` and ```ORegAnno``` to _dense_
@@ -336,11 +336,11 @@ As you notice, the SnpEff annotated variants occur in exonic regions. Using the 
 
 ### 4.1 Overview of the ENSEMBL VEP
 
-### _What does VEP provide?_
+#### _What does VEP provide?_
 
 VEP is a software suite that is part of the [ENSEMBL project](http://www.ensembl.org/info/docs/tools/index.html). It performs the analysis and annotation of many types of genomic variants with the goal of predicting their functional consequences. VEP could be run via its online interface or from the command line. In this exercise we will use the online interface.
 
-_Using VEP to annotate the SnpEff modifiers annotated as having HIGH impact_
+### 4.2 Using VEP to annotate the SnpEff modifiers annotated as having HIGH impact
 
 Go to the [VEP page](http://www.ensembl.org/info/docs/tools/vep/index.html) and from the Web interface section click on ```Launch Ve!P```.
 
@@ -389,7 +389,7 @@ Please, note, that if you choose the Excel format, when you open the file, in th
 
 ![exl](figures/VEP-Excel-Text.png)
 
-### 4.2 Exploring the agreement between the annotation obtained with different tools
+### 4.3 Exploring the agreement between the annotation obtained with different tools
 
 As this point, the VEP results page displays annotations for the variants you uploaded produced with four different tools: the implicit SnpEff annotation (since you uploaded only the variants predicted to have HIGH impact), the VEP annotation (listed in the Impact column) and scores from two other annotation programs — [SIFT](https://sift.bii.a-star.edu.sg/www/SIFT_help.html)] and [PolyPhen](http://genetics.bwh.harvard.edu/pph/#:~:text=PolyPhen%20(%3DPolymorphism%20Phenotyping)%20is,straightforward%20physical%20and%20comparative%20considerations).
 
@@ -400,7 +400,7 @@ To explore how well these tools agree in their annotations let's sort the result
 
 This illustrates the fact that in order to select the strongest candidates for further analyses it is useful to corroborate the annotation obtained with multiple tools.
 
-# **4.3 Exploring the annotation of the novel variants**
+### 4.4 Exploring the annotation of the novel variants
 
 Have a look again at the summary statistics reported by VEP.
 
