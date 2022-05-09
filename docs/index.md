@@ -1,7 +1,3 @@
-theme: jekyll-theme-slate
-markdown: CommonMarkGhPages
-
-
 
 ## Table of contents
 
