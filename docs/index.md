@@ -143,8 +143,8 @@ this will take a minute or two.
 Annotations for each individual variant will be stored in the newly created ```.vcf``` file.
 
 - With that in mind, have a look at the ```.vcf``` file.
-  - Can you find the annotation fields?
-  - What is the prediction for variants  ```rs1459497417``` , ```rs1194205126```, ```rs74315486``` and ``` rs758790937 ``` ?
+  - can you find the annotation fields?
+  - what is the prediction for variants  ```rs1459497417``` , ```rs1194205126```, ```rs74315486``` and ``` rs758790937 ``` ?
   - is this in line with the predictions from Wang et al? Refer to Table 1 in the paper.
 
 For the subsequent analysis, we are only interested in the variants that have a "HIGH" or "MODERATE" predicted effect.
@@ -379,7 +379,7 @@ VEP is a software suite that is part of the [ENSEMBL project](http://www.ensembl
 
 Go to the [VEP page](http://www.ensembl.org/info/docs/tools/vep/index.html) and from the Web interface section click on ```Launch Ve!P```.
 
-![](figures/VEP-new-job-page.png)
+![newjob](figures/VEP-new-job-page.png)
 
 On the ```New job``` page, note the followings:
 
@@ -390,7 +390,7 @@ On the ```New job``` page, note the followings:
 
 Click on the green ```Run``` button. Your job will be placed in queue and run; this will take a few minutes depending on how busy the server is. When the run is completed, click on the ```View results``` link.
 
-![vepres1](figures/VEP-job-done.png)
+![vepres1](figures/VEP_job-done.png)
 
 #### _Exploring and navigating the VEP results page_
 
