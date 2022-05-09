@@ -15,7 +15,7 @@ markdown: CommonMarkGhPages
 	- [2.2 Learning more about the _CRYBA4_ gene and its variants](#22-learning-more-about-the-cryba4-gene-and-its-variants)
 - [3:  Identifying deleterious SNPs in the CRYBA4 gene using SnpEff](#3-identifying-deleterious-snps-in-the-cryba4-gene-using-snpeff)
 - [4. Visualizing the gene and its annotated variants using the UCSC Genome Browser](#4-visualizing-the-gene-and-its-annotated-variants-using-the-ucsc-genome-browser)
-	- [4.1 Overview of the [UCSC Genome Browser](https://genome-euro.ucsc.edu/index.html)](#41-overview-of-the-ucsc-genome-browserhttpsgenome-euroucsceduindexhtml)
+	- [4.1 Overview of the UCSC Genome Browser](#4.1-Overview-of-the-UCSC-Genome-Browser)
 		- [_What does the Genome Browser provide?_](#what-does-the-genome-browser-provide)
 			- [Reset to the default setting:](#reset-to-the-default-setting)
 			- [Select species and assembly](#select-species-and-assembly)
@@ -168,7 +168,9 @@ grep "#" 20220425_chr22_targetregion.recode_diff_chrname.ann.vcf > annot_high.vc
 
 ## 4. Visualizing the gene and its annotated variants using the UCSC Genome Browser
 
-### 4.1 Overview of the [UCSC Genome Browser](https://genome-euro.ucsc.edu/index.html)
+### 4.1 Overview of the UCSC Genome Browser
+
+[UCSC Genome Browser](https://genome-euro.ucsc.edu/index.html)
 
 #### _What does the Genome Browser provide?_
 
