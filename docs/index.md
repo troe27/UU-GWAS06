@@ -5,48 +5,47 @@ markdown: CommonMarkGhPages
 
 ## Table of contents
 
-- [1. Introduction](#1-introduction)
-	- [1.1 Overview](#11-overview)
-	- [1.2 Learning goals](#12-learning-goals)
-	- [1.3 Requirements for completion](#13-requirements-for-completion)
-	- [1.4. References and Materials](#14-references-and-materials)
-- [2. The biological context](#2-the-biological-context)
-	- [2.1 The eye lens, crystallins and cataracts](#21-the-eye-lens-crystallins-and-cataracts)
-	- [2.2 Learning more about the _CRYBA4_ gene and its variants](#22-learning-more-about-the-cryba4-gene-and-its-variants)
-- [3:  Identifying deleterious SNPs in the CRYBA4 gene using SnpEff](#3-identifying-deleterious-snps-in-the-cryba4-gene-using-snpeff)
-- [4. Visualizing the gene and its annotated variants using the UCSC Genome Browser](#4-visualizing-the-gene-and-its-annotated-variants-using-the-ucsc-genome-browser)
-	- [4.1 Overview of the UCSC Genome Browser](#4.1-Overview-of-the-UCSC-Genome-Browser)
+- [Table of contents](#table-of-contents)
+- [1 Introduction](#1-introduction)
+	- [1-1 Overview](#1-1-overview)
+	- [1-2 Learning goals](#1-2-learning-goals)
+	- [1-3 Requirements for completion](#1-3-requirements-for-completion)
+	- [1-4 References and Materials](#1-4-references-and-materials)
+- [2 The biological context](#2-the-biological-context)
+	- [2-1 The eye lens, crystallins and cataracts](#2-1-the-eye-lens-crystallins-and-cataracts)
+	- [2-2 Learning more about the _CRYBA4_ gene and its variants](#2-2-learning-more-about-the-cryba4-gene-and-its-variants)
+- [3  Identifying deleterious SNPs in the CRYBA4 gene using SnpEff](#3-identifying-deleterious-snps-in-the-cryba4-gene-using-snpeff)
+- [4 Visualizing the gene and its annotated variants using the UCSC Genome Browser](#4-visualizing-the-gene-and-its-annotated-variants-using-the-ucsc-genome-browser)
+	- [4-1 Overview of the UCSC Genome Browser](#4-1-overview-of-the-ucsc-genome-browser)
 		- [_What does the Genome Browser provide?_](#what-does-the-genome-browser-provide)
-			- [Reset to the default setting:](#reset-to-the-default-setting)
-			- [Select species and assembly](#select-species-and-assembly)
-			- [Browser interface](#browser-interface)
-			- [Track display modes](#track-display-modes)
+		- [Reset to the default setting:](#reset-to-the-default-setting)
+		- [Select species and assembly](#select-species-and-assembly)
+		- [Browser interface](#browser-interface)
+		- [Track display modes](#track-display-modes)
 		- [Highlighting a region](#highlighting-a-region)
 		- [Further Navigation Options](#further-navigation-options)
-			- [Save as a png format image](#save-as-a-png-format-image)
-	- [4.2 Exploring the CRYBA4 locus in the UCSC Genome Browser](#42-exploring-the-cryba4-locus-in-the-ucsc-genome-browser)
-	- [4.3 Visualizing the SnpEff-annotated variants as a custom track in the UCSC Genome Browser](#43-visualizing-the-snpeff-annotated-variants-as-a-custom-track-in-the-ucsc-genome-browser)
+		- [Save as a png format image](#save-as-a-png-format-image)
+	- [4-2 Exploring the CRYBA4 locus in the UCSC Genome Browser](#4-2-exploring-the-cryba4-locus-in-the-ucsc-genome-browser)
+	- [4-3 Visualizing the SnpEff-annotated variants as a custom track in the UCSC Genome Browser](#4-3-visualizing-the-snpeff-annotated-variants-as-a-custom-track-in-the-ucsc-genome-browser)
 		- [Custom tracks](#custom-tracks)
 		- [BED format](#bed-format)
 		- [Generating the BED format files](#generating-the-bed-format-files)
 		- [Uploading the BED format files as custom tracks](#uploading-the-bed-format-files-as-custom-tracks)
 		- [_Exploring the variants_](#exploring-the-variants)
-			- [Make sure that the following tracks are turned on:](#make-sure-that-the-following-tracks-are-turned-on)
-- [4. Identifying deleterious SNPs in the** _CRYBA4_ gene using the ENSEMBL Variant Effect Predictor (VEP) -](#4-identifying-deleterious-snps-in-the-cryba4-gene-using-the-ensembl-variant-effect-predictor-vep-)
-	- [4.1 Overview of the ENSEMBL VEP](#41-overview-of-the-ensembl-vep)
+- [5 Identifying deleterious SNPs in the** _CRYBA4_ gene using the ENSEMBL Variant Effect Predictor (VEP) -](#5-identifying-deleterious-snps-in-the-cryba4-gene-using-the-ensembl-variant-effect-predictor-vep-)
+	- [5-1 Overview of the ENSEMBL VEP](#5-1-overview-of-the-ensembl-vep)
 		- [_What does VEP provide?_](#what-does-vep-provide)
-	- [4.2 Using VEP to annotate the SnpEff modifiers annotated as having HIGH impact](#42-using-vep-to-annotate-the-snpeff-modifiers-annotated-as-having-high-impact)
+	- [5-2 Using VEP to annotate the SnpEff modifiers annotated as having HIGH impact](#5-2-using-vep-to-annotate-the-snpeff-modifiers-annotated-as-having-high-impact)
 		- [_Exploring and navigating the VEP results page_](#exploring-and-navigating-the-vep-results-page)
 		- [Downloading the results](#downloading-the-results)
-	- [4.3 Exploring the agreement between the annotation obtained with different tools](#43-exploring-the-agreement-between-the-annotation-obtained-with-different-tools)
-	- [4.4 Exploring the annotation of the novel variants](#44-exploring-the-annotation-of-the-novel-variants)
+	- [5-3 Exploring the agreement between the annotation obtained with different tools](#5-3-exploring-the-agreement-between-the-annotation-obtained-with-different-tools)
+	- [5-4 Exploring the annotation of the novel variants](#5-4-exploring-the-annotation-of-the-novel-variants)
 
 
 
+## 1 Introduction
 
-## 1. Introduction
-
-### 1.1 Overview
+### 1-1 Overview
 
 In this practical you will learn how to use well-established methods and resources to annotate a collection of variants to determine if a given substitution has a deleterious effect and possibly pathological consequences.
 
@@ -54,15 +53,15 @@ We will follow the example in the paper by [Wang et al., PLoS One, 2020, 15(1)](
 
 You will start with a large collection of SNPs reported for _CRYBA4_ in the [dbSNP database](https://www.ncbi.nlm.nih.gov/books/NBK21088/) and you will annotate them using the command-line annotation and functional prediction tool [SNPEff](http://pcingola.github.io/SnpEff/se_introduction/). You will visualize some of these variants using the [UCSC Genome Browser](https://genome.ucsc.edu/training/index.html) to understand their position and properties in the context of the genomic region of the _CRYBA4_ gene. As time permits, you will also annotate a subset of these variants using the online tool [ENSEMBLE Variant Effect Predictor (VEP)](https://www.youtube.com/watch?v=6MltwC-ydN0).
 
-### 1.2 Learning goals
+### 1-2 Learning goals
 
 The goal of the practical is to familiarize you with annotation tools that you could apply to any set of variants of interest and also, to enhance your knowledge on how to use the UCSC Genome Browser for extracting important information about a variant or a gene region.
 
-### 1.3 Requirements for completion
+### 1-3 Requirements for completion
 
 To complete this practical you need to go through Parts 2-4 of this document and answer the questions. You are strongly encouraged to complete Part 5 as well, but do as much as you can as time permits. Please, submit your report to voichita.marinescu@imbim.uu.se **no later than May 27, 2022.**
 
-### 1.4. References and Materials
+### 1-4 References and Materials
 
 - The paper discussed in the lecture: [Wang et al., PLoS One, 2020, 15(1)](./wang_etal_2020.pdf)
 
@@ -79,16 +78,16 @@ To complete this practical you need to go through Parts 2-4 of this document and
 
 
 
-## 2. The biological context
+## 2 The biological context
 
-### 2.1 The eye lens, crystallins and cataracts
+### 2-1 The eye lens, crystallins and cataracts
 
 The lens of the eye is an avascular transparent structure situated behind the iris whose primary role is to focus incoming light onto retina. The transparency of the lens is essential for normal vision and conditions that cause an opacity of the lens lead to diseases called cataracts (panel A below). The predominant proteins in the lens are crystallins that are divided in two superfamilies alpha and beta-gamma; alpha and beta family members are further classified based on their acidic or basic character (panel B below). The genes for several members of the beta family, including the gene that we will focus on, _CRYBA4_, form a gene cluster on chromosome 22 (panel C, from Wiston G., _Hum. Genomics_, 2012, 6(1)). Mutations in _CRYBA4_, have been associated with different forms of congenital cataracts.
 
 ![int_fig1](figures/Introduction_Figure-1.png)
 
 
-### 2.2 Learning more about the _CRYBA4_ gene and its variants
+### 2-2 Learning more about the _CRYBA4_ gene and its variants
 
 Access the page for [_CRYBA4_](https://www.genecards.org/cgi-bin/carddisp.pl?gene=CRYBA4#) at [GeneCards](https://www.genecards.org/), a comprehensive, integrative database for all annotated and predicted human genes. Read through the page and in particular the following sections:
 
@@ -103,7 +102,7 @@ Access the page for [_CRYBA4_](https://www.genecards.org/cgi-bin/carddisp.pl?gen
 
 
 
-## 3:  Identifying deleterious SNPs in the CRYBA4 gene using SnpEff
+## 3  Identifying deleterious SNPs in the CRYBA4 gene using SnpEff
 The Goal of this exercise is to familiarise yourself with a common annotation tool, and learn how to interpret the results.
 
 
@@ -166,9 +165,9 @@ grep "#" 20220425_chr22_targetregion.recode_diff_chrname.ann.vcf > annot_high.vc
 
 
 
-## 4. Visualizing the gene and its annotated variants using the UCSC Genome Browser
+## 4 Visualizing the gene and its annotated variants using the UCSC Genome Browser
 
-### 4.1 Overview of the UCSC Genome Browser
+### 4-1 Overview of the UCSC Genome Browser
 
 [UCSC Genome Browser](https://genome-euro.ucsc.edu/index.html)
 
@@ -177,26 +176,26 @@ grep "#" 20220425_chr22_targetregion.recode_diff_chrname.ann.vcf > annot_high.vc
 As we focus our research on the genome sequence data, displaying billions of letters of genomic DNA is not effective. As an alternative, the Genome Browser provides a rapid and reliable approach for visualizing information at any scale. ```Tracks``` in the Genome Browser align all selected relevant information at one location, which makes it possible to explore and integrate multiple layers of information.
 
 
-##### Reset to the default setting:  
+#### Reset to the default setting:  
 For those whose who haven't used the genome browser before, you may reset to the default setting.
 
 ![reset_settings](figures/reset.png)  
 
-##### Select species and assembly
+#### Select species and assembly
 Enter the selection page by clicking the “Genome Browser” option under the “Our tools” column.
 
 ![select_ss](figures/select_ss.png)  
 
 On this page, you may select species from the ```Popular Species``` option, using the search field or the species tree. Importantly, on the right, you need to select the assembly version. That has to match the assembly version you used in SnpEff! Also, you need to supply the chromosome and start and end positions for the region that you want to visualize or an identifier for a gene, SNP, etc.
 
-##### Browser interface
+#### Browser interface
 
 ![BI](figures/BI.png)  
 
 When the genomic region you entered on the start page is visualized, multiple layers of information will be displayed as tracks. The tracks are grouped based on the type of information they provide. Click the button ```collapse all``` to display the different groups of tracks as in the figure above. Then explore them one by one by clicking on the ```+``` sign. Each group contains tracks from different sources. To learn more about a track, click on the track name and read the description. To learn more about the features displayed in the images (_e.g._ a gene) click on it to get detailed information about it.
 
 
-##### Track display modes
+#### Track display modes
 
 You decide which tracks to display and how to display them. Each time you select or deselect a track, or you change the way it is displayed you need to click on ```refresh```.
 
@@ -254,12 +253,12 @@ In addition to specifying the chromosome and the start and end positions in the 
 
 - **By SNP identifier** - an “rs” number is also accepted in the search box (e.g. rs74315486)
 
-##### Save as a png format image
+#### Save as a png format image
 ![PNG](figures/save_png.png)  
 
 Right-click at any place in the track viewer and select the “View Image” option from the pop-up menu. This will open a new tab in your browser showing the figure that you could download in png format; right click on the image and choose “Save image as”. Depending on your browser settings you may need to allow pop-ups from the UCSC in order for the image to be opened in a new tab.
 
-### 4.2 Exploring the CRYBA4 locus in the UCSC Genome Browser
+### 4-2 Exploring the CRYBA4 locus in the UCSC Genome Browser
 
 - Type the gene symbol **CRYBA4** in the search box at the top and click ```go```. Turn on all the default tracks.
 
@@ -284,7 +283,7 @@ Two important tracks displaying regulatory elements are included in the ```Regul
 
 
 
-### 4.3 Visualizing the SnpEff-annotated variants as a custom track in the UCSC Genome Browser
+### 4-3 Visualizing the SnpEff-annotated variants as a custom track in the UCSC Genome Browser
 
 #### Custom tracks
 One very powerful feature of the Genome Browser is its ability to upload data supplied by the user and display it as a custom track alongside all other tracks in its database. In the previous section, you generated the ```annot_high.vcf``` and ```annot_mod.vcf``` files. We are going to upload and visualize the SNPs in these files as custom tracks in the genome browser.
@@ -356,7 +355,7 @@ You will now have a new track group ```Custom tracks``` at the top. Each of the 
 
 #### _Exploring the variants_
 
-##### Make sure that the following tracks are turned on:
+**Make sure that the following tracks are turned on**:
 
 - in the ```Conservation``` group, set ```Conservation``` to _full_
 - in the ```Regulation``` group, set ```ENCODE cCREs``` and ```ORegAnno``` to _dense_
@@ -372,15 +371,15 @@ As you notice, the SnpEff annotated variants occur in exonic regions. Using the 
 - include a picture highlighting your selected SNPs in your report
 
 
-## 4. Identifying deleterious SNPs in the** _CRYBA4_ gene using the ENSEMBL Variant Effect Predictor (VEP) -
+## 5 Identifying deleterious SNPs in the** _CRYBA4_ gene using the ENSEMBL Variant Effect Predictor (VEP) -
 
-### 4.1 Overview of the ENSEMBL VEP
+### 5-1 Overview of the ENSEMBL VEP
 
 #### _What does VEP provide?_
 
 VEP is a software suite that is part of the [ENSEMBL project](http://www.ensembl.org/info/docs/tools/index.html). It performs the analysis and annotation of many types of genomic variants with the goal of predicting their functional consequences. VEP could be run via its online interface or from the command line. In this exercise we will use the online interface.
 
-### 4.2 Using VEP to annotate the SnpEff modifiers annotated as having HIGH impact
+### 5-2 Using VEP to annotate the SnpEff modifiers annotated as having HIGH impact
 
 Go to the [VEP page](http://www.ensembl.org/info/docs/tools/vep/index.html) and from the Web interface section click on ```Launch Ve!P```.
 
@@ -429,7 +428,7 @@ Please, note, that if you choose the Excel format, when you open the file, in th
 
 ![exl](figures/VEP-Excel-Text.png)
 
-### 4.3 Exploring the agreement between the annotation obtained with different tools
+### 5-3 Exploring the agreement between the annotation obtained with different tools
 
 As this point, the VEP results page displays annotations for the variants you uploaded produced with four different tools: the implicit SnpEff annotation (since you uploaded only the variants predicted to have HIGH impact), the VEP annotation (listed in the Impact column) and scores from two other annotation programs — [SIFT](https://sift.bii.a-star.edu.sg/www/SIFT_help.html)] and [PolyPhen](http://genetics.bwh.harvard.edu/pph/#:~:text=PolyPhen%20(%3DPolymorphism%20Phenotyping)%20is,straightforward%20physical%20and%20comparative%20considerations).
 
@@ -440,7 +439,7 @@ To explore how well these tools agree in their annotations let's sort the result
 
 This illustrates the fact that in order to select the strongest candidates for further analyses it is useful to corroborate the annotation obtained with multiple tools.
 
-### 4.4 Exploring the annotation of the novel variants
+### 5-4 Exploring the annotation of the novel variants
 
 Have a look again at the summary statistics reported by VEP.
 
