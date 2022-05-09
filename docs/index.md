@@ -10,7 +10,7 @@
 - [2 The biological context](#2-the-biological-context)
 	- [2-1 The eye lens, crystallins and cataracts](#2-1-the-eye-lens-crystallins-and-cataracts)
 	- [2-2 Learning more about the _CRYBA4_ gene and its variants](#2-2-learning-more-about-the-cryba4-gene-and-its-variants)
-- [3  Identifying deleterious SNPs in the _CRYBA4_ gene using SnpEff](#3-identifying-deleterious-snps-in-the-cryba4-gene-using-snpeff)
+- [3  Identifying deleterious SNPs in the _CRYBA4_ gene using SnpEff](#3-identifying-deleterious-snps-in-the-cryba4-gene-using-SnpEff)
 - [4 Visualizing the gene and its annotated variants using the UCSC Genome Browser](#4-visualizing-the-gene-and-its-annotated-variants-using-the-ucsc-genome-browser)
 	- [4-1 Overview of the UCSC Genome Browser](#4-1-overview-of-the-ucsc-genome-browser)
 		- [What does the Genome Browser provide?](#what-does-the-genome-browser-provide)
@@ -22,7 +22,7 @@
 		- [Further Navigation Options](#further-navigation-options)
 		- [Save as a png format image](#save-as-a-png-format-image)
 	- [4-2 Exploring the _CRYBA4_ locus in the UCSC Genome Browser](#4-2-exploring-the-cryba4-locus-in-the-ucsc-genome-browser)
-	- [4-3 Visualizing the SnpEff-annotated variants as a custom track in the UCSC Genome Browser](#4\--3-visualizing-the-snpeff-annotated-variants-as-a-custom-track-in-the-ucsc-genome-browser)
+	- [4-3 Visualizing the SnpEff-annotated variants as a custom track in the UCSC Genome Browser](#4\--3-visualizing-the-SnpEff-annotated-variants-as-a-custom-track-in-the-ucsc-genome-browser)
 		- [Custom tracks](#custom-tracks)
 		- [BED format](#bed-format)
 		- [Generating the BED format files](#generating-the-bed-format-files)
@@ -31,7 +31,7 @@
 - [5 Identifying deleterious SNPs in the** _CRYBA4_ gene using the ENSEMBL Variant Effect Predictor (VEP) -](#5-identifying-deleterious-snps-in-the-cryba4-gene-using-the-ensembl-variant-effect-predictor-vep-)
 	- [5-1 Overview of the ENSEMBL VEP](#5-1-overview-of-the-ensembl-vep)
 		- [_What does VEP provide?_](#what-does-vep-provide)
-	- [5-2 Using VEP to annotate the SnpEff modifiers annotated as having HIGH impact](#5-2-using-vep-to-annotate-the-snpeff-modifiers-annotated-as-having-high-impact)
+	- [5-2 Using VEP to annotate the SnpEff modifiers annotated as having HIGH impact](#5-2-using-vep-to-annotate-the-SnpEff-modifiers-annotated-as-having-high-impact)
 		- [_Exploring and navigating the VEP results page_](#exploring-and-navigating-the-vep-results-page)
 		- [Downloading the results](#downloading-the-results)
 	- [5-3 Exploring the agreement between the annotation obtained with different tools](#5-3-exploring-the-agreement-between-the-annotation-obtained-with-different-tools)
@@ -47,11 +47,11 @@ In this practical you will learn how to use well-established methods and resourc
 
 We will follow the example in the paper by [Wang et al., PLoS One, 2020, 15(1)]( https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0227859&amp;type=printable) presented in the lecture and focus on the variation associated with the gene [_CRYBA4_ ](https://www.genecards.org/cgi-bin/carddisp.pl?gene=CRYBA4&amp;keywords=cryba4) (crystallin beta A4).
 
-You will start with a large collection of SNPs reported for _CRYBA4_ in the [dbSNP database](https://www.ncbi.nlm.nih.gov/books/NBK21088/) and you will annotate them using the command-line annotation and functional prediction tool [SNPEff](http://pcingola.github.io/SnpEff/se_introduction/). You will visualize some of these variants using the [UCSC Genome Browser](https://genome.ucsc.edu/training/index.html) to understand their position and properties in the context of the genomic region of the _CRYBA4_ gene. As time permits, you will also annotate a subset of these variants using the online tool [ENSEMBLE Variant Effect Predictor (VEP)](https://www.youtube.com/watch?v=6MltwC-ydN0).
+You will start with a large collection of SNPs reported for _CRYBA4_ in the [dbSNP database](https://www.ncbi.nlm.nih.gov/books/NBK21088/) and you will annotate them using the command-line annotation and functional prediction tool [SnpEff](http://pcingola.github.io/SnpEff/se_introduction/). You will visualize some of these variants using the [UCSC Genome Browser](https://genome.ucsc.edu/training/index.html) to understand their position and properties in the context of the genomic region of the _CRYBA4_ gene. As time permits, you will also annotate a subset of these variants using the online tool [ENSEMBLE Variant Effect Predictor (VEP)](https://www.youtube.com/watch?v=6MltwC-ydN0).
 
 ### 1-2 Learning goals
 
-The goal of the practical is to familiarize you with annotation tools that you could apply to any set of variants of interest and also, to enhance your knowledge on how to use the UCSC Genome Browser for extracting important information about a variant or a gene region.
+The goal of the practical is to familiarize you with annotation tools that you could apply to any set of variants of interest, and also to enhance your knowledge on how to use the UCSC Genome Browser for extracting important information about a variant or a gene region.
 
 ### 1-3 Requirements for completion
 
@@ -59,13 +59,13 @@ To complete this practical you need to go through Parts 2-4 of this document and
 
 ### 1-4 References and Materials
 
-- The paper discussed in the lecture: [Wang et al., PLoS One, 2020, 15(1)](./wang_etal_2020.pdf)
+- The paper discussed in the lecture: [Wang et al., PLoS One, 2020, 15(1)](./wang_etal_2020.pdf).
 
-- SNPEff reference: [Cingolani et al (2012)](http://pcingola.github.io/SnpEff/adds/SnpEff_paper.pdf).
+- SnpEff reference: [Cingolani et al (2012)](http://pcingola.github.io/SnpEff/adds/SnpEff_paper.pdf).
 
-- UCSC Genome Browser database reference: [Gonzalez et al., Nucleic Acids Res. 2021, 49(D1): D1046–D1057.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7779060/)
+- UCSC Genome Browser database reference: [Gonzalez et al., Nucleic Acids Res. 2021, 49(D1): D1046–D1057.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7779060/).
 
-- ENSEMBL VEP reference: [McLaren et al., Genome Biology, 17(1):122, 2016](https://genomebiology.biomedcentral.com/track/pdf/10.1186/s13059-016-0974-4.pdf)]
+- ENSEMBL VEP reference: [McLaren et al., Genome Biology, 17(1):122, 2016](https://genomebiology.biomedcentral.com/track/pdf/10.1186/s13059-016-0974-4.pdf).
 
 - VCF file with variants to be annotated:
 ```
@@ -78,7 +78,7 @@ To complete this practical you need to go through Parts 2-4 of this document and
 
 ### 2-1 The eye lens, crystallins and cataracts
 
-The lens of the eye is an avascular transparent structure situated behind the iris whose primary role is to focus incoming light onto retina. The transparency of the lens is essential for normal vision and conditions that cause an opacity of the lens lead to diseases called cataracts (panel A below). The predominant proteins in the lens are crystallins that are divided in two superfamilies alpha and beta-gamma; alpha and beta family members are further classified based on their acidic or basic character (panel B below). The genes for several members of the beta family, including the gene that we will focus on, _CRYBA4_, form a gene cluster on chromosome 22 (panel C, from Wiston G., _Hum. Genomics_, 2012, 6(1)). Mutations in _CRYBA4_, have been associated with different forms of congenital cataracts.
+The lens of the eye is an avascular transparent structure situated behind the iris whose primary role is to focus incoming light onto retina. The transparency of the lens is essential for normal vision and conditions that cause an opacity of the lens lead to diseases called cataracts (panel A below). The predominant proteins in the lens are crystallins that are divided in two superfamilies, alpha and beta-gamma; alpha and beta family members are further classified based on their acidic or basic character (panel B below). The genes for several members of the beta family, including the gene that we will focus on, _CRYBA4_, form a gene cluster on chromosome 22 (panel C, from Wiston G., _Hum. Genomics_, 2012, 6(1)). Mutations in _CRYBA4_, have been associated with different forms of congenital cataracts.
 
 ![int_fig1](figures/Introduction_Figure-1.png)
 
@@ -102,7 +102,7 @@ Access the page for [_CRYBA4_](https://www.genecards.org/cgi-bin/carddisp.pl?gen
 The Goal of this exercise is to familiarise yourself with a common annotation tool, and learn how to interpret the results.
 
 
-for this exercise, we are going to annotate a ```.vcf```.
+For this exercise, we are going to annotate a ```.vcf```.
 It was created by subsetting a larger (184GB) Database-style ```.vcf```, [the Single Nucleotide Polymorphism Database (dbSNP)](https://www.ncbi.nlm.nih.gov/books/NBK21088/), which you can [download from the NCBI ftp-server](https://ftp.ncbi.nlm.nih.gov/snp/latest_release/VCF/).
 The file we are working with is much smaller and contains variants from a small subsection of the human chromosome 22.
 
@@ -110,25 +110,25 @@ For annotating these variants, we will be using [SnpEff](http://pcingola.github.
 We will be working on Rackham for this, where SnpEff is installed as a module.
 
 - log into rackham, start an interactive session with the reservation code ```reservation code```
-- load the modules ```bioinfo-tools``` and ```snpEff/4.3t```
+- load the modules ```bioinfo-tools``` and ```SnpEff/4.3t```
 - copy the file ```/proj/g2020004/private/computer_practicals/GWAS06/20220425_chr22_targetregion.recode_diff_chrname.vcf``` to your working directory.
 
 
 SnpEff works by comparing the positions of these SNPs against a database of genes, ORFs and other genome annotations to estimate the function and impact of individual SNPs.
- Many database annotations  e.g. for humans and model organisms are built into SnpEff, so we do not have to [generate them ourselves](http://pcingola.github.io/SnpEff/se_buildingdb/), though it is possible to do so from a ```.gff``` file.
-You can have a look at the list of possible annotations using ```snpEff databases```. Be warned, its a long list!
+ Many database annotations  _e.g._ for humans and model organisms are built into SnpEff, so we do not have to [generate them ourselves](http://pcingola.github.io/SnpEff/se_buildingdb/), though it is possible to do so from a ```.gff``` file.
+You can have a look at the list of possible annotations using ```SnpEff databases```. Be warned, its a long list!
 
 It is important however, to match the reference genome your ```.vcf``` was based on, to a database based on the same reference. This information is stored in the ```.vcf``` file.
 - Can you tell which reference our ```.vcf```file was built on? If you are unsure where to look, remember the [VCFv4.2 fileformat specifications](https://samtools.github.io/hts-specs/VCFv4.2.pdf).
 
-We will be using the ```eff ``` command within snpEff to annotate our ```.vcf```-file and generate a ```.html``` report:
+We will be using the ```eff ``` command within SnpEff to annotate our ```.vcf```-file and generate a ```.html``` report:
 
 ```bash
-snpEff eff GRCh38.86 file.vcf  > file.ann.vcf
+SnpEff eff GRCh38.86 file.vcf  > file.ann.vcf
 ```
 
 this will take a minute or two.
-- have a look at the summary file using ```firefox```. If you do not have X11 forwarding enabled, or lack a X11 backend on your computer, you'll have to download the file.
+- Have a look at the summary file using ```firefox```. If you do not have X11 forwarding enabled, or lack a X11 backend on your computer, you'll have to download the file.
   - how many of the SNPs are in the exonic regions?
   - how many variants result in a new stop-codon?
   - what is the Ts/Tv ratio?
@@ -149,7 +149,7 @@ Annotations for each individual variant will be stored in the newly created ```.
 
 For the subsequent analysis, we are only interested in the variants that have a "HIGH" or "MODERATE" predicted effect.
 
-- extract these variants and put them in separate files. this will help us later when investigating these variants in the UCSC genome browser.
+- Extract these variants and put them in separate files. this will help us later when investigating these variants in the UCSC genome browser.
 ```bash
 grep "#" 20220425_chr22_targetregion.recode_diff_chrname.ann.vcf > annot_mod.vcf && grep "MODERATE" 20220425_chr22_targetregion.recode_diff_chrname.ann.vcf >> annot_mod.vcf
 grep "#" 20220425_chr22_targetregion.recode_diff_chrname.ann.vcf > annot_high.vcf && grep "HIGH" 20220425_chr22_targetregion.recode_diff_chrname.ann.vcf >> annot_high.vcf
@@ -173,7 +173,7 @@ As we focus our research on the genome sequence data, displaying billions of let
 
 
 #### Reset to the default setting:  
-For those whose who haven't used the genome browser before, you may reset to the default setting.
+For those whose who haven't used the genome browser before you may reset to the default setting.
 
 ![reset_settings](figures/reset.png)  
 
@@ -188,46 +188,43 @@ On this page, you may select species from the ```Popular Species``` option, usin
 
 ![BI](figures/BI.png)  
 
-When the genomic region you entered on the start page is visualized, multiple layers of information will be displayed as tracks. The tracks are grouped based on the type of information they provide. Click the button ```collapse all``` to display the different groups of tracks as in the figure above. Then explore them one by one by clicking on the ```+``` sign. Each group contains tracks from different sources. To learn more about a track, click on the track name and read the description. To learn more about the features displayed in the images (_e.g._ a gene) click on it to get detailed information about it.
+When the genomic region you entered on the start page is visualized, multiple layers of information will be displayed as tracks. The tracks are grouped based on the type of information they provide. Click the button ```collapse all``` to display the different groups of tracks as in the figure above. Then explore them one by one by clicking on the ```+``` sign. Each group contains tracks from different sources. To learn more about a track, click on the track name and read the description. To learn more about the features displayed in the images (__e.g.__ a gene) click on it to get detailed information about it.
 
 
 #### Track display modes
 
-You decide which tracks to display and how to display them. Each time you select or deselect a track, or you change the way it is displayed you need to click on ```refresh```.
+You decide which tracks to display and how to display them. Each time you select or deselect a track or you change the way it is displayed you need to click on ```refresh```.
 
-A track can be hidden or it could be displayed with different degrees of detail. Try all these options yourself and notice the differences. A good track to experiment this on is the GENCODE V39 track under ```Genes and Gene Predictions``` which, according to its description (click on the track name to read it), shows high-quality manual annotations merged with evidence-based automated annotations across the entire human genome generated by the GENCODE project.
+A track can be hidden or it could be displayed with different degrees of detail. Try all these options yourself and notice the differences. A good track to experiment this on is the GENCODE V39 track under ```Genes and Gene Predictions``` that, according to its description (click on the track name to read it), shows high-quality manual annotations merged with evidence-based automated annotations across the entire human genome generated by the [GENCODE project](https://www.gencodegenes.org/).
 
 
 These are the track visualization options:
 
 ![display_modes.png](figures/dp_modes.png)  
 
-- Try all these options yourself and see what’s the difference.
+Try all these options yourself and see what’s the difference.
 
-**Hide**  
-The track is not displayed at all. To hide all tracks, click the hide all button under all tracks.
+**Hide** - the track is not displayed at all. To hide all tracks, click the ```hide all``` button under all tracks.
+
 
 ![hide](figures/hide.png)
 
-**Dense**  
-This option displays all features in one line and is useful for reducing space when you don’t need individual line item details or just need an overview of annotations.
+**Dense** - this option displays all features in one line and is useful for reducing space when you do not need details for each individual item but just an overview of the annotations.
 
-![dense](figures/dense.png)
+![dense](figures/dense.png)  
 
-**Full**  
-This option displayed each feature on a separate line.
-![full](figures/full.png)
+**Squish** - this option displays each annotation feature separately but at 50% height compared to the full mode. Several features may be drawn in one line and be unlabeled.
+
+![squish](figures/squish.png)  
 
 
-**Squish**  
-This option is displaying each annotation feature separately but at 50% height of the full mode. Several features may be drawn in one line and they are unlabeled.
+**Pack** - each annotation feature is displayed separately with a label, but not necessarily on a separate line.
 
-![squish](figures/squish.png)
+![pack](figures/pack.png)  
 
-**Pack**  
-Each annotation features displayed separately with label, but not necessarily on a separate line.
+**Full** - This option displays each feature on a separate line.  
+![full](figures/full.png)  
 
-![pack](figures/pack.png)
 
 
 #### Highlighting a region
@@ -235,19 +232,19 @@ To highlight a selected region or an element (for example a SNP) you need to hol
 
 
 ![HL](figures/highlight.png)  
-Right-clicking in the track browser, you may zoom in to the highlighted region or to remove the highlight.  
+By right-clicking on the highlighted region you could zoom in or you could remove the highlight.
 
 ![zoomhl](figures/zoomhl.png)
 
 
 #### Further Navigation Options
-In addition to specifying the chromosome and the start and end positions in the search box, you could navigate to the genomic location of interest by using gene identifiers (e.g. the gene symbol) or SNP rs identifiers.
+In addition to specifying the chromosome and the start and end positions in the search box, you could navigate to the genomic location of interest by using gene identifiers (_e.g._ the gene symbol) or SNP rs identifiers.
 
 - **By gene name** - in the search box at the top in which you see “gene, chromosome range or other position” type in  _CRYBA4_ and click “go”.
 
 - **By gene name and the amino acid number** - you may navigate to the selected amino acid in a protein by specifying its number in the protein sequence. For example, type in CRYBA4 p22 and the browser will display the nucleotides coding for the 22nd amino acid of the protein.
 
-- **By SNP identifier** - an “rs” number is also accepted in the search box (e.g. rs74315486)
+- **By SNP identifier** - an “rs” number is also accepted in the search box (_e.g._ rs74315486)
 
 #### Save as a png format image
 ![PNG](figures/save_png.png)  
@@ -267,7 +264,7 @@ Right-click at any place in the track viewer and select the “View Image” opt
 
 Two important tracks displaying regulatory elements are included in the ```Regulation``` track group.
 
-- click on the ```ENCODE cCRE``` link in the Regulation track section. What information does this provide?
+- click on the ```ENCODE cCRE``` link in the Regulation track section. What information does this track provide?
 - click on the ```ORegAnno``` link in the Regulation track section to learn more about this track. Turn it on and set it to _pack_.
 
 - The Genome Browser also provides information on gene expression via the tracks in the ```Expression``` group. Turn on the gene expression track ```GTEx Gene V8``` and set it to _pack_. Click on the track name link to learn more about what data is included and how it was generated.
@@ -275,7 +272,7 @@ Two important tracks displaying regulatory elements are included in the ```Regul
 - Click on the GTEx Gene V8 bar plots corresponding to the _CRYBA4_ and _CRYBB1_ genes.
 
 	- in what tissue is each gene most abundant?
-	- what do you notice when you compare the expression plots for the two genes? It would be easier to download the two images and inspect them side by side.
+	- what do you notice when you compare the expression plots for the two genes? It might be easier to download the two images and inspect them side by side.
 
 
 
@@ -292,7 +289,7 @@ The BED file is a space- or tab-delimited text file that contains a number of re
 
 
 The first three required BED fields are:
-- **chrom**: The name of the chromosome (e.g. chr3, chrY) or scaffold.
+- **chrom**: The name of the chromosome (_e.g._ chr3, chrY) or scaffold.
 - **chromStart**: The starting position of the feature in the chromosome or scaffold.
 - **chromEnd**: The ending position of the feature in the chromosome or scaffold.
 
@@ -302,7 +299,7 @@ The 9 additional optional BED fields are:
 - **strand**: Either “.” (no strand), “+”, or “-”
 - **thickStart**: The starting position at which the feature is drawn thickly
 - **thickEnd**: The ending position at which the feature is drawn thickly
-- **itemRgb**: An RGB value of the form R,G,B (e.g. 255,0,0)
+- **itemRgb**: An RGB value of the form R,G,B (_e.g._ 255,0,0)
 - **blockCount**: The number of blocks (exons) in the BED line
 - **blockSizes**: A comma-separated list of the block sizes.
 - **blockStarts**: A comma-separated list of block starts.
@@ -340,7 +337,7 @@ Click on```Choose file``` to upload the ```annot_high.bed``` file from your comp
 
 ![choosef](figures/choosef.png)
 
-he next ```Manage Custom Tracks``` page will list the name of the files, the description, the number of items in the file and the position on the chromosome. This page also allows you to delete a custom track when it is no longer needed.
+The next ```Manage Custom Tracks``` page will list the name of the files, the description, the number of items in the file and the position on the chromosome. This page also allows you to delete a custom track when it is no longer needed.
 
 ![man_ct](figures/man_ct.png)
 
@@ -367,7 +364,7 @@ As you notice, the SnpEff annotated variants occur in exonic regions. Using the 
 - include a picture highlighting your selected SNPs in your report
 
 
-## 5 Identifying deleterious SNPs in the** _CRYBA4_ gene using the ENSEMBL Variant Effect Predictor (VEP) -
+## 5 Identifying deleterious SNPs in the _CRYBA4_ gene using the ENSEMBL Variant Effect Predictor (VEP) -
 
 ### 5-1 Overview of the ENSEMBL VEP
 
@@ -385,22 +382,21 @@ On the ```New job``` page, note the followings:
 
 - the default species and assembly is _Homo sapiens GRCh38.p13,_ which is what you used for SnpEff, so you do not need to change it.
 - the input to VEP could be supplied in [different data formats](https://www.ensembl.org/info/docs/tools/vep/vep_formats.html) such as VEP or VCF format etc. The input could be pasted in the Input box (in the case of a handful of variants) or uploaded as a file for larger datasets. For this exercise you will upload the ```annot_high.vcf``` file that you prepared in Part 2.
-- there are several additional configurations that you could choose from. Explore some of them by expanding them, but, for now proceed with the default options. You could turn on/off the display for some of these options from the Results page.
+- there are several additional configurations that you could choose from. Explore some by expanding them, but for now proceed with the default options. You could turn on/off the display for some of these options from the Results page.
 - the link at the bottom of the page listing the ```Recent jobs``` that you submitted; this list could come in handy later.
 
 Click on the green ```Run``` button. Your job will be placed in queue and run; this will take a few minutes depending on how busy the server is. When the run is completed, click on the ```View results``` link.
 
 ![vepres1](figures/VEP_job-done.png)
 
-#### _Exploring and navigating the VEP results page_
+#### Exploring and navigating the VEP results page
 
 Start exploring the VEP results page by expanding the ```Job details``` section. These were the parameters you used in your search. Note the ```Command line equivalent``` at the bottom; this is how you would run VEP from the command line to produce the same results.
 
 The ```Summary statistics``` section provides a very informative breakdown of the results and also pie charts describing the proportion of the different categories of variants with respect to their predicted consequences (in general) and predicted coding consequences (in particular).
 
-⁃ which were the top two most abundant types of general and coding consequences found?
-
-⁃ which types of consequences in the two categories do you think would have the most dramatic effect?
+ - which were the top two most abundant types of general and coding consequences found?  
+ - which types of consequences in the two categories do you think would have the most dramatic effect?  
 
 To display all results in one page rather than having them broken down in several pages (which will interfere with sorting), click on ```All``` in the Navigation per variant panel.
 
@@ -420,13 +416,13 @@ You could download the results in different formats and analyze them locally in 
 
 ![dl_vpres](figures/VEP-download.png)
 
-Please, note, that if you choose the Excel format, when you open the file, in the third step of the import dialog you will need to specify the Data Format for the EXON and INTRON fields as Text, otherwise Excel will display the values in these columns as dates [2/3 will become Mar-2 or Feb-3 depending on your date settings].
+Please, note, that if you choose the Excel format, when you open the file, in the third step of the import dialog you will need to specify the Data Format for the EXON and INTRON fields as Text, otherwise Excel will display the values in these columns as dates (2/3 will become Mar-2 or Feb-3 depending on your date settings).
 
 ![exl](figures/VEP-Excel-Text.png)
 
 ### 5-3 Exploring the agreement between the annotation obtained with different tools
 
-As this point, the VEP results page displays annotations for the variants you uploaded produced with four different tools: the implicit SnpEff annotation (since you uploaded only the variants predicted to have HIGH impact), the VEP annotation (listed in the Impact column) and scores from two other annotation programs — [SIFT](https://sift.bii.a-star.edu.sg/www/SIFT_help.html)] and [PolyPhen](http://genetics.bwh.harvard.edu/pph/#:~:text=PolyPhen%20(%3DPolymorphism%20Phenotyping)%20is,straightforward%20physical%20and%20comparative%20considerations).
+As this point, the VEP results page displays annotations for the variants you uploaded produced with four different tools: the implicit SnpEff annotation (since you uploaded only the variants predicted to have HIGH impact), the VEP annotation (listed in the Impact column) and scores from two other annotation programs — [SIFT](https://sift.bii.a-star.edu.sg/www/SIFT_help.html) and [PolyPhen](http://genetics.bwh.harvard.edu/pph/#:~:text=PolyPhen%20(%3DPolymorphism%20Phenotyping)%20is,straightforward%20physical%20and%20comparative%20considerations).
 
 To explore how well these tools agree in their annotations let's sort the results page by the PolyPhen scores by clicking on the arrow pointing up at the right of the column name. Mouse-over the scores in the differently colored boxes to understand the color legend.
 
@@ -451,7 +447,7 @@ _Filters provide a powerful way to explore further the results. You could add ad
 
 The filtered list of novel variants has many more rows than the number of novel variants reported in the statistics section. Why is that? Hint: sort the results by Uploaded variant.
 
-Sort the list again by PolyPhen score. Notice that only a handful of novel variants were annotated by Sift and PolyPhen.
+Sort the list again by PolyPhen score. Notice that only a handful of novel variants were annotated by SIFT and PolyPhen.
 
 Sort the list by column Impact (the VEP annotation)
 
