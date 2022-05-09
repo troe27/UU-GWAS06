@@ -2,47 +2,46 @@ theme: jekyll-theme-slate
 markdown: CommonMarkGhPages
 
 
+
 ## Table of contents
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
 
-	- [Table of contents](#table-of-contents)
-	- [1. Introduction](#1-introduction)
-		- [1.1 Overview](#11-overview)
-		- [1.2 Learning goals](#12-learning-goals)
-		- [1.3 Requirements for completion](#13-requirements-for-completion)
-		- [1.4. References and Materials](#14-references-and-materials)
-	- [**2. The biological context**](#2-the-biological-context)
-		- [2.1 The eye lens, crystallins and cataracts](#21-the-eye-lens-crystallins-and-cataracts)
-		- [2.2 Learning more about the _CRYBA4_ gene and its variants](#22-learning-more-about-the-cryba4-gene-and-its-variants)
-	- [3:  Identifying deleterious SNPs in the CRYBA4 gene using SnpEff](#3-identifying-deleterious-snps-in-the-cryba4-gene-using-snpeff)
-	- [4. Visualizing the gene and its annotated variants using the UCSC Genome Browser](#4-visualizing-the-gene-and-its-annotated-variants-using-the-ucsc-genome-browser)
-		- [4.1 Overview of the [UCSC Genome Browser](https://genome-euro.ucsc.edu/index.html)](#41-overview-of-the-ucsc-genome-browserhttpsgenome-euroucsceduindexhtml)
-			- [_What does the Genome Browser provide?_](#what-does-the-genome-browser-provide)
-				- [Reset to the default setting:](#reset-to-the-default-setting)
-				- [Select species and assembly](#select-species-and-assembly)
-				- [Browser interface](#browser-interface)
-				- [Track display modes](#track-display-modes)
-			- [Highlighting a region](#highlighting-a-region)
-			- [Further Navigation Options](#further-navigation-options)
-				- [Save as a png format image](#save-as-a-png-format-image)
-		- [4.2 Exploring the CRYBA4 locus in the UCSC Genome Browser](#42-exploring-the-cryba4-locus-in-the-ucsc-genome-browser)
-		- [**4.3 Visualizing the SnpEff-annotated variants as a custom track in the UCSC Genome Browser**](#43-visualizing-the-snpeff-annotated-variants-as-a-custom-track-in-the-ucsc-genome-browser)
-			- [Custom tracks](#custom-tracks)
-			- [BED format](#bed-format)
-			- [Generating the BED format files](#generating-the-bed-format-files)
-			- [Uploading the BED format files as custom tracks](#uploading-the-bed-format-files-as-custom-tracks)
-			- [_Exploring the variants_](#exploring-the-variants)
-				- [Make sure that the following tracks are turned on:](#make-sure-that-the-following-tracks-are-turned-on)
-	- [4. Identifying deleterious SNPs in the** _CRYBA4_ gene using the ENSEMBL Variant Effect Predictor (VEP) -](#4-identifying-deleterious-snps-in-the-cryba4-gene-using-the-ensembl-variant-effect-predictor-vep-)
-		- [4.1 Overview of the ENSEMBL VEP](#41-overview-of-the-ensembl-vep)
-			- [_What does VEP provide?_](#what-does-vep-provide)
-		- [4.2 Using VEP to annotate the SnpEff modifiers annotated as having HIGH impact](#42-using-vep-to-annotate-the-snpeff-modifiers-annotated-as-having-high-impact)
-			- [_Exploring and navigating the VEP results page_](#exploring-and-navigating-the-vep-results-page)
-			- [Downloading the results](#downloading-the-results)
-		- [4.3 Exploring the agreement between the annotation obtained with different tools](#43-exploring-the-agreement-between-the-annotation-obtained-with-different-tools)
-		- [4.4 Exploring the annotation of the novel variants](#44-exploring-the-annotation-of-the-novel-variants)
+- [1. Introduction](#1-introduction)
+	- [1.1 Overview](#11-overview)
+	- [1.2 Learning goals](#12-learning-goals)
+	- [1.3 Requirements for completion](#13-requirements-for-completion)
+	- [1.4. References and Materials](#14-references-and-materials)
+- [2. The biological context](#2-the-biological-context)
+	- [2.1 The eye lens, crystallins and cataracts](#21-the-eye-lens-crystallins-and-cataracts)
+	- [2.2 Learning more about the _CRYBA4_ gene and its variants](#22-learning-more-about-the-cryba4-gene-and-its-variants)
+- [3:  Identifying deleterious SNPs in the CRYBA4 gene using SnpEff](#3-identifying-deleterious-snps-in-the-cryba4-gene-using-snpeff)
+- [4. Visualizing the gene and its annotated variants using the UCSC Genome Browser](#4-visualizing-the-gene-and-its-annotated-variants-using-the-ucsc-genome-browser)
+	- [4.1 Overview of the [UCSC Genome Browser](https://genome-euro.ucsc.edu/index.html)](#41-overview-of-the-ucsc-genome-browserhttpsgenome-euroucsceduindexhtml)
+		- [_What does the Genome Browser provide?_](#what-does-the-genome-browser-provide)
+			- [Reset to the default setting:](#reset-to-the-default-setting)
+			- [Select species and assembly](#select-species-and-assembly)
+			- [Browser interface](#browser-interface)
+			- [Track display modes](#track-display-modes)
+		- [Highlighting a region](#highlighting-a-region)
+		- [Further Navigation Options](#further-navigation-options)
+			- [Save as a png format image](#save-as-a-png-format-image)
+	- [4.2 Exploring the CRYBA4 locus in the UCSC Genome Browser](#42-exploring-the-cryba4-locus-in-the-ucsc-genome-browser)
+	- [4.3 Visualizing the SnpEff-annotated variants as a custom track in the UCSC Genome Browser](#43-visualizing-the-snpeff-annotated-variants-as-a-custom-track-in-the-ucsc-genome-browser)
+		- [Custom tracks](#custom-tracks)
+		- [BED format](#bed-format)
+		- [Generating the BED format files](#generating-the-bed-format-files)
+		- [Uploading the BED format files as custom tracks](#uploading-the-bed-format-files-as-custom-tracks)
+		- [_Exploring the variants_](#exploring-the-variants)
+			- [Make sure that the following tracks are turned on:](#make-sure-that-the-following-tracks-are-turned-on)
+- [4. Identifying deleterious SNPs in the** _CRYBA4_ gene using the ENSEMBL Variant Effect Predictor (VEP) -](#4-identifying-deleterious-snps-in-the-cryba4-gene-using-the-ensembl-variant-effect-predictor-vep-)
+	- [4.1 Overview of the ENSEMBL VEP](#41-overview-of-the-ensembl-vep)
+		- [_What does VEP provide?_](#what-does-vep-provide)
+	- [4.2 Using VEP to annotate the SnpEff modifiers annotated as having HIGH impact](#42-using-vep-to-annotate-the-snpeff-modifiers-annotated-as-having-high-impact)
+		- [_Exploring and navigating the VEP results page_](#exploring-and-navigating-the-vep-results-page)
+		- [Downloading the results](#downloading-the-results)
+	- [4.3 Exploring the agreement between the annotation obtained with different tools](#43-exploring-the-agreement-between-the-annotation-obtained-with-different-tools)
+	- [4.4 Exploring the annotation of the novel variants](#44-exploring-the-annotation-of-the-novel-variants)
 
-<!-- /TOC -->
+
 
 
 ## 1. Introduction
@@ -80,7 +79,7 @@ To complete this practical you need to go through Parts 2-4 of this document and
 
 
 
-## **2. The biological context**
+## 2. The biological context
 
 ### 2.1 The eye lens, crystallins and cataracts
 
@@ -283,7 +282,7 @@ Two important tracks displaying regulatory elements are included in the ```Regul
 
 
 
-### **4.3 Visualizing the SnpEff-annotated variants as a custom track in the UCSC Genome Browser**
+### 4.3 Visualizing the SnpEff-annotated variants as a custom track in the UCSC Genome Browser
 
 #### Custom tracks
 One very powerful feature of the Genome Browser is its ability to upload data supplied by the user and display it as a custom track alongside all other tracks in its database. In the previous section, you generated the ```annot_high.vcf``` and ```annot_mod.vcf``` files. We are going to upload and visualize the SNPs in these files as custom tracks in the genome browser.
