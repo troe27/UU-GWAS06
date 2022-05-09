@@ -28,7 +28,7 @@
 		- [Generating the BED format files](#generating-the-bed-format-files)
 		- [Uploading the BED format files as custom tracks](#uploading-the-bed-format-files-as-custom-tracks)
 		- [Exploring the variants](#exploring-the-variants)
-- [5 Identifying deleterious SNPs in the** _CRYBA4_ gene using the ENSEMBL Variant Effect Predictor (VEP) -](#5-identifying-deleterious-snps-in-the-cryba4-gene-using-the-ensembl-variant-effect-predictor-vep-)
+- [5 Identifying deleterious SNPs in the _CRYBA4_ gene using the ENSEMBL Variant Effect Predictor (VEP) -](#5-identifying-deleterious-snps-in-the-cryba4-gene-using-the-ensembl-variant-effect-predictor-vep-)
 	- [5-1 Overview of the ENSEMBL VEP](#5-1-overview-of-the-ensembl-vep)
 		- [_What does VEP provide?_](#what-does-vep-provide)
 	- [5-2 Using VEP to annotate the SnpEff modifiers annotated as having HIGH impact](#5-2-using-vep-to-annotate-the-snpeff-modifiers-annotated-as-having-high-impact)
@@ -367,7 +367,7 @@ As you notice, the SnpEff annotated variants occur in exonic regions. Using the 
 - include a picture highlighting your selected SNPs in your report
 
 
-## 5 Identifying deleterious SNPs in the** _CRYBA4_ gene using the ENSEMBL Variant Effect Predictor (VEP) -
+## 5 Identifying deleterious SNPs in the _CRYBA4_ gene using the ENSEMBL Variant Effect Predictor (VEP) -
 
 ### 5-1 Overview of the ENSEMBL VEP
 
@@ -426,7 +426,7 @@ Please, note, that if you choose the Excel format, when you open the file, in th
 
 ### 5-3 Exploring the agreement between the annotation obtained with different tools
 
-As this point, the VEP results page displays annotations for the variants you uploaded produced with four different tools: the implicit SnpEff annotation (since you uploaded only the variants predicted to have HIGH impact), the VEP annotation (listed in the Impact column) and scores from two other annotation programs — [SIFT](https://sift.bii.a-star.edu.sg/www/SIFT_help.html)] and [PolyPhen](http://genetics.bwh.harvard.edu/pph/#:~:text=PolyPhen%20(%3DPolymorphism%20Phenotyping)%20is,straightforward%20physical%20and%20comparative%20considerations).
+As this point, the VEP results page displays annotations for the variants you uploaded produced with four different tools: the implicit SnpEff annotation (since you uploaded only the variants predicted to have HIGH impact), the VEP annotation (listed in the Impact column) and scores from two other annotation programs — [SIFT](https://sift.bii.a-star.edu.sg/www/SIFT_help.html) and [PolyPhen](http://genetics.bwh.harvard.edu/pph/#:~:text=PolyPhen%20(%3DPolymorphism%20Phenotyping)%20is,straightforward%20physical%20and%20comparative%20considerations).
 
 To explore how well these tools agree in their annotations let's sort the results page by the PolyPhen scores by clicking on the arrow pointing up at the right of the column name. Mouse-over the scores in the differently colored boxes to understand the color legend.
 

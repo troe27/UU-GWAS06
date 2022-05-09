@@ -129,7 +129,7 @@ snpEff eff GRCh38.86 file.vcf  > file.ann.vcf
 
 this will take a minute or two.
 - have a look at the summary file using ```firefox```. If you do not have X11 forwarding enabled, or lack a X11 backend on your computer, you'll have to download the file.
-  - how many of the SNPs are in the exonic regions?
+  - how many of the variants are in the exonic regions?
   - how many variants result in a new stop-codon?
   - what is the Ts/Tv ratio?
   - why are the plots for the quality histogram and allele-frequency empty?
