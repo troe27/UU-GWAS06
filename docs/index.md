@@ -55,7 +55,7 @@ The goal of the practical is to familiarize you with annotation tools that you c
 
 ### 1-3 Requirements for completion
 
-To complete this practical you need to go through Parts 2-4 of this document and answer the questions. You are strongly encouraged to complete Part 5 as well, but do as much as you can as time permits. Please, submit your report to voichita.marinescu@imbim.uu.se **no later than May 27, 2022.**
+To complete this practical you need to go through Parts 2-4 of this document and answer the questions. You are strongly encouraged to complete Part 5 as well, but do as much as you can as time permits. Please, submit your report to mailto:voichita.marinescu@imbim.uu.se **no later than May 27, 2022.**
 
 ### 1-4 References and Materials
 
