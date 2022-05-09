@@ -26,7 +26,7 @@ markdown: CommonMarkGhPages
 		- [Further Navigation Options](#further-navigation-options)
 		- [Save as a png format image](#save-as-a-png-format-image)
 	- [4-2 Exploring the CRYBA4 locus in the UCSC Genome Browser](#4-2-exploring-the-cryba4-locus-in-the-ucsc-genome-browser)
-	- [4-3 Visualizing the SnpEff-annotated variants as a custom track in the UCSC Genome Browser](#4-3-visualizing-the-snpeff-annotated-variants-as-a-custom-track-in-the-ucsc-genome-browser)
+	- [4-3 Visualizing the SnpEff-annotated variants as a custom track in the UCSC Genome Browser](#4\--3-visualizing-the-snpeff-annotated-variants-as-a-custom-track-in-the-ucsc-genome-browser)
 		- [Custom tracks](#custom-tracks)
 		- [BED format](#bed-format)
 		- [Generating the BED format files](#generating-the-bed-format-files)
