@@ -10,10 +10,10 @@
 - [2 The biological context](#2-the-biological-context)
 	- [2-1 The eye lens, crystallins and cataracts](#2-1-the-eye-lens-crystallins-and-cataracts)
 	- [2-2 Learning more about the _CRYBA4_ gene and its variants](#2-2-learning-more-about-the-cryba4-gene-and-its-variants)
-- [3  Identifying deleterious SNPs in the CRYBA4 gene using SnpEff](#3-identifying-deleterious-snps-in-the-cryba4-gene-using-snpeff)
+- [3  Identifying deleterious SNPs in the _CRYBA4_ gene using SnpEff](#3-identifying-deleterious-snps-in-the-cryba4-gene-using-snpeff)
 - [4 Visualizing the gene and its annotated variants using the UCSC Genome Browser](#4-visualizing-the-gene-and-its-annotated-variants-using-the-ucsc-genome-browser)
 	- [4-1 Overview of the UCSC Genome Browser](#4-1-overview-of-the-ucsc-genome-browser)
-		- [_What does the Genome Browser provide?_](#what-does-the-genome-browser-provide)
+		- [What does the Genome Browser provide?](#what-does-the-genome-browser-provide)
 		- [Reset to the default setting:](#reset-to-the-default-setting)
 		- [Select species and assembly](#select-species-and-assembly)
 		- [Browser interface](#browser-interface)
@@ -21,13 +21,13 @@
 		- [Highlighting a region](#highlighting-a-region)
 		- [Further Navigation Options](#further-navigation-options)
 		- [Save as a png format image](#save-as-a-png-format-image)
-	- [4-2 Exploring the CRYBA4 locus in the UCSC Genome Browser](#4-2-exploring-the-cryba4-locus-in-the-ucsc-genome-browser)
+	- [4-2 Exploring the _CRYBA4_ locus in the UCSC Genome Browser](#4-2-exploring-the-cryba4-locus-in-the-ucsc-genome-browser)
 	- [4-3 Visualizing the SnpEff-annotated variants as a custom track in the UCSC Genome Browser](#4\--3-visualizing-the-snpeff-annotated-variants-as-a-custom-track-in-the-ucsc-genome-browser)
 		- [Custom tracks](#custom-tracks)
 		- [BED format](#bed-format)
 		- [Generating the BED format files](#generating-the-bed-format-files)
 		- [Uploading the BED format files as custom tracks](#uploading-the-bed-format-files-as-custom-tracks)
-		- [_Exploring the variants_](#exploring-the-variants)
+		- [Exploring the variants](#exploring-the-variants)
 - [5 Identifying deleterious SNPs in the** _CRYBA4_ gene using the ENSEMBL Variant Effect Predictor (VEP) -](#5-identifying-deleterious-snps-in-the-cryba4-gene-using-the-ensembl-variant-effect-predictor-vep-)
 	- [5-1 Overview of the ENSEMBL VEP](#5-1-overview-of-the-ensembl-vep)
 		- [_What does VEP provide?_](#what-does-vep-provide)
@@ -98,7 +98,7 @@ Access the page for [_CRYBA4_](https://www.genecards.org/cgi-bin/carddisp.pl?gen
 
 
 
-## 3  Identifying deleterious SNPs in the CRYBA4 gene using SnpEff
+## 3  Identifying deleterious SNPs in the _CRYBA4_ gene using SnpEff
 The Goal of this exercise is to familiarise yourself with a common annotation tool, and learn how to interpret the results.
 
 
@@ -243,7 +243,7 @@ Right-clicking in the track browser, you may zoom in to the highlighted region o
 #### Further Navigation Options
 In addition to specifying the chromosome and the start and end positions in the search box, you could navigate to the genomic location of interest by using gene identifiers (e.g. the gene symbol) or SNP rs identifiers.
 
-- **By gene name** - in the search box at the top in which you see “gene, chromosome range or other position” type in  CRYBA4 and click “go”.
+- **By gene name** - in the search box at the top in which you see “gene, chromosome range or other position” type in  _CRYBA4_ and click “go”.
 
 - **By gene name and the amino acid number** - you may navigate to the selected amino acid in a protein by specifying its number in the protein sequence. For example, type in CRYBA4 p22 and the browser will display the nucleotides coding for the 22nd amino acid of the protein.
 
@@ -349,7 +349,7 @@ You will now have a new track group ```Custom tracks``` at the top. Each of the 
 
 ![custom_tracks](figures/cust_view.png)
 
-#### _Exploring the variants_
+#### Exploring the variants
 
 **Make sure that the following tracks are turned on**:
 
@@ -371,7 +371,7 @@ As you notice, the SnpEff annotated variants occur in exonic regions. Using the 
 
 ### 5-1 Overview of the ENSEMBL VEP
 
-#### _What does VEP provide?_
+#### What does VEP provide?
 
 VEP is a software suite that is part of the [ENSEMBL project](http://www.ensembl.org/info/docs/tools/index.html). It performs the analysis and annotation of many types of genomic variants with the goal of predicting their functional consequences. VEP could be run via its online interface or from the command line. In this exercise we will use the online interface.
 
