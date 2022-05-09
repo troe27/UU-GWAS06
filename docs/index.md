@@ -109,13 +109,8 @@ The file we are working with is much smaller and contains variants from a small 
 For annotating these variants, we will be using [SnpEff](http://pcingola.github.io/SnpEff/) by [Cingolani et al (2012)](http://pcingola.github.io/SnpEff/adds/SnpEff_paper.pdf).
 We will be working on Rackham for this, where SnpEff is installed as a module.
 
-<<<<<<< HEAD
-- log into rackham, start an interactive session with the reservation code ```reservation code```
-- load the modules ```bioinfo-tools``` and ```SnpEff/4.3t```
-=======
 - log into rackham, start an interactive session.
 - load the modules ```bioinfo-tools``` and ```snpEff/4.3t```
->>>>>>> caf408bc287525b526bf058f938572e71e1cace5
 - copy the file ```/proj/g2020004/private/computer_practicals/GWAS06/20220425_chr22_targetregion.recode_diff_chrname.vcf``` to your working directory.
 
 
@@ -133,13 +128,8 @@ SnpEff eff GRCh38.86 file.vcf  > file.ann.vcf
 ```
 
 this will take a minute or two.
-<<<<<<< HEAD
 - Have a look at the summary file using ```firefox```. If you do not have X11 forwarding enabled, or lack a X11 backend on your computer, you'll have to download the file.
   - how many of the SNPs are in the exonic regions?
-=======
-- have a look at the summary file using ```firefox```. If you do not have X11 forwarding enabled, or lack a X11 backend on your computer, you'll have to download the file.
-  - how many of the variants are in the exonic regions?
->>>>>>> caf408bc287525b526bf058f938572e71e1cace5
   - how many variants result in a new stop-codon?
   - what is the Ts/Tv ratio?
   - why are the plots for the quality histogram and allele-frequency empty?
