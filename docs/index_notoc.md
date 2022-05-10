@@ -90,15 +90,15 @@ SnpEff eff GRCh38.86 file.vcf  > file.ann.vcf
 ```
 
 this will take a minute or two.
-- Have a look at the summary file using ```firefox```. If you do not have X11 forwarding enabled, or lack a X11 backend on your computer, you'll have to download the file.
-  - how many of the SNPs are in the exonic regions?
-  - how many variants result in a new stop-codon?
-  - what is the Ts/Tv ratio?
-  - why are the plots for the quality histogram and allele-frequency empty?
-  - what is the most common amino-acid change?
-  - how many times was the **GAG** codon mutated to **AAG** ?
-  - how many times was the **TTG** codon mutated to **GTG**?
-  - which of these two point mutations will likely have a larger impact on the protein structure? [hint](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amino_Acids.svg/831px-Amino_Acids.svg.png)
+- Have a look at the summary file using ```firefox```. If you do not have X11 forwarding enabled, or lack a X11 backend on your computer, you'll have to download the file.  
+  - how many of the SNPs are in the exonic regions?  
+  - how many variants result in a new stop-codon?  
+  - what is the Ts/Tv ratio?  
+  - why are the plots for the quality histogram and allele-frequency empty?  
+  - what is the most common amino-acid change?  
+  - how many times was the **GAG** codon mutated to **AAG** ?  
+  - how many times was the **TTG** codon mutated to **GTG**?  
+  - which of these two point mutations will likely have a larger impact on the protein structure? [hint](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amino_Acids.svg/831px-Amino_Acids.svg.png)  
 
 
 
