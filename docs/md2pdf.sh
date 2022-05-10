@@ -1,0 +1,1 @@
+pandoc --pdf-engine=xelatex --toc --highlight-style tango --listings -H head.tex -V geometry:"top=2cm, bottom=1.5cm, left=2cm, right=2cm" -o index.pdf index_notoc.md
