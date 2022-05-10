@@ -14,7 +14,7 @@
 - [4 Visualizing the gene and its annotated variants using the UCSC Genome Browser](#4-visualizing-the-gene-and-its-annotated-variants-using-the-ucsc-genome-browser)
 	- [4-1 Overview of the UCSC Genome Browser](#4-1-overview-of-the-ucsc-genome-browser)
 		- [What does the Genome Browser provide?](#what-does-the-genome-browser-provide)
-		- [Reset to the default setting:](#reset-to-the-default-setting)
+		- [Reset to the default settings](#reset-to-the-default-settings)
 		- [Select species and assembly](#select-species-and-assembly)
 		- [Browser interface](#browser-interface)
 		- [Track display modes](#track-display-modes)
@@ -28,11 +28,11 @@
 		- [Generating the BED format files](#generating-the-bed-format-files)
 		- [Uploading the BED format files as custom tracks](#uploading-the-bed-format-files-as-custom-tracks)
 		- [Exploring the variants](#exploring-the-variants)
-- [5 Identifying deleterious SNPs in the _CRYBA4_ gene using the ENSEMBL Variant Effect Predictor (VEP) -](#5-identifying-deleterious-snps-in-the-cryba4-gene-using-the-ensembl-variant-effect-predictor-vep-)
+- [5 Identifying deleterious SNPs in the _CRYBA4_ gene using the ENSEMBL Variant Effect Predictor (VEP)](#5-identifying-deleterious-snps-in-the-cryba4-gene-using-the-ensembl-variant-effect-predictor-vep)
 	- [5-1 Overview of the ENSEMBL VEP](#5-1-overview-of-the-ensembl-vep)
-		- [_What does VEP provide?_](#what-does-vep-provide)
+		- [What does VEP provide?](#what-does-vep-provide)
 	- [5-2 Using VEP to annotate the SnpEff modifiers annotated as having HIGH impact](#5-2-using-vep-to-annotate-the-SnpEff-modifiers-annotated-as-having-high-impact)
-		- [_Exploring and navigating the VEP results page_](#exploring-and-navigating-the-vep-results-page)
+		- [Exploring and navigating the VEP results page](#exploring-and-navigating-the-vep-results-page)
 		- [Downloading the results](#downloading-the-results)
 	- [5-3 Exploring the agreement between the annotation obtained with different tools](#5-3-exploring-the-agreement-between-the-annotation-obtained-with-different-tools)
 	- [5-4 Exploring the annotation of the novel variants](#5-4-exploring-the-annotation-of-the-novel-variants)
@@ -63,7 +63,7 @@ To complete this practical you need to go through Parts 2-4 of this document and
 
 - SnpEff reference: [Cingolani et al (2012)](http://pcingola.github.io/SnpEff/adds/SnpEff_paper.pdf).
 
-- UCSC Genome Browser database reference: [Gonzalez et al., Nucleic Acids Res. 2021, 49(D1): D1046–D1057.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7779060/).
+- UCSC Genome Browser database reference: [Gonzalez et al., Nucleic Acids Res. 2021, 49(D1): D1046–D1057](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7779060/).
 
 - ENSEMBL VEP reference: [McLaren et al., Genome Biology, 17(1):122, 2016](https://genomebiology.biomedcentral.com/track/pdf/10.1186/s13059-016-0974-4.pdf).
 
@@ -99,7 +99,7 @@ Access the page for [_CRYBA4_](https://www.genecards.org/cgi-bin/carddisp.pl?gen
 
 
 ## 3  Identifying deleterious SNPs in the _CRYBA4_ gene using SnpEff
-The Goal of this exercise is to familiarise yourself with a common annotation tool, and learn how to interpret the results.
+The goal of this exercise is to familiarise yourself with a common annotation tool, and learn how to interpret the results.
 
 
 For this exercise, we are going to annotate a ```.vcf```.
@@ -172,7 +172,7 @@ grep "#" 20220425_chr22_targetregion.recode_diff_chrname.ann.vcf > annot_high.vc
 As we focus our research on the genome sequence data, displaying billions of letters of genomic DNA is not effective. As an alternative, the Genome Browser provides a rapid and reliable approach for visualizing information at any scale. ```Tracks``` in the Genome Browser align all selected relevant information at one location, which makes it possible to explore and integrate multiple layers of information.
 
 
-#### Reset to the default setting:  
+#### Reset to the default settings  
 For those whose who haven't used the genome browser before you may reset to the default setting.
 
 ![reset_settings](figures/reset.png)  
@@ -355,7 +355,7 @@ You will now have a new track group ```Custom tracks``` at the top. Each of the 
 - go to the ```Phenotype and Literature``` group. Set the ```OMIM Alleles``` and ```ClinVar Variants``` to _pack_.
 - to begin with, you may need to turn your custom tracks to _dense_, but later on you will need to set them to _pack_ or _full_.
 
-Click on the link in the name of the ```OMIM Alleles``` and ```ClinVar Variants``` and read the description. In particular, familiarize yourself with the color coding and the meaning of the letter symbols used in the ClinVar track.
+Click on the link in the names of the ```OMIM Alleles``` and ```ClinVar Variants``` and read the description. In particular, familiarize yourself with the color coding and the meaning of the letter symbols used in the ClinVar tracks.
 
 As you notice, the SnpEff annotated variants occur in exonic regions. Using the highlight/zoom function described above, zoom into 2 exonic regions of your choice. Turn the custom tracks to pack or full. Using the highlight function, select 3 SnpEff variants that are most likely to be pathogenic and would constitute good candidates for follow-up experiments. Make your selection based on the information in the other tracks too.
 
@@ -364,7 +364,7 @@ As you notice, the SnpEff annotated variants occur in exonic regions. Using the 
 - include a picture highlighting your selected SNPs in your report
 
 
-## 5 Identifying deleterious SNPs in the _CRYBA4_ gene using the ENSEMBL Variant Effect Predictor (VEP) -
+## 5 Identifying deleterious SNPs in the _CRYBA4_ gene using the ENSEMBL Variant Effect Predictor (VEP)
 
 ### 5-1 Overview of the ENSEMBL VEP
 
@@ -378,7 +378,7 @@ Go to the [VEP page](http://www.ensembl.org/info/docs/tools/vep/index.html) and 
 
 ![newjob](figures/VEP-new-job-page.png)
 
-On the ```New job``` page, note the followings:
+On the ```New job``` page, note the following:
 
 - the default species and assembly is _Homo sapiens GRCh38.p13,_ which is what you used for SnpEff, so you do not need to change it.
 - the input to VEP could be supplied in [different data formats](https://www.ensembl.org/info/docs/tools/vep/vep_formats.html) such as VEP or VCF format etc. The input could be pasted in the Input box (in the case of a handful of variants) or uploaded as a file for larger datasets. For this exercise you will upload the ```annot_high.vcf``` file that you prepared in Part 2.
